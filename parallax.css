@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+/* body, html {
+    display: flex;
+    
+  width:100%;
+  height:100%;
+  background:#ddd;
+  font-family: 'Montserrat', sans-serif;
+  font-size:99px;
+  text-align:center;
+} */
+.parallax{
+  /* overflow-y: hidden;  */
+  display: flex;
+  width:100%;
+  height:100%; 
+  /* background:#ddd; */
+  font-family: 'Montserrat', sans-serif;
+  font-size:99px;
+  text-align:center;
+  /* margin-left  : 6vw; */
+  scale: 1;
+    /* display: flex; */
+    /* justify-content: center;  */
+    /* align-items: center; */
+  /* position:absolute; */
+}
+
+
+.center{
+    justify-content: center;
+}
+
+/* <div class="center"></div> */
+.vish{
+  font-family:'batman_forever';
+}
+*{
+  @font-face {
+    font-family: 'batman_forever';
+    src: url('fonts/batman_forever (1)/batmfa__.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+}

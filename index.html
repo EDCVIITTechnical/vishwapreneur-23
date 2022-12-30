@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="parallax.css">
+
+    <!-- guest  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="guests.css">
+
+    <!-- timer -->
+    <link href="timer/flipTimer.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> <!--countdown pluggin-->
+    <script src="timer/jquery.flipTimer.js"></script>
+    <link rel="stylesheet" href="timer/timer.css">
+    <title>Document</title>
+    <nav class="nav">
+        <input type="checkbox" id="check">
+      <label for="check" class="nv-checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+    <ul class="nv-grid-list nv-ul">
+        <li><a class="nv-line nv-li" href="#Home">Home</a></li>
+        <li><a class="nv-line nv-li" href="#Home">Schedule</a></li>
+        <li><a class="nv-line nv-li" href="#Home">Speaker</a></li>
+        <li><a class="nv-line nv-li" href="#Services">Gallery</a></li>
+        <li><a class="nv-line nv-li" href="#Contact">FAQ</a></li>
+        <li><a class="nv-line nv-li" href="#About">Connect</a></li>
+    </ul>
+    </nav>
+</head>
+<body>
+    <div class="parallax">
+        <div style="translate: none;justify-content: center;align-items: center; rotate: none; top: 0px; height: 100%; width: 100%;">
+            <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+              <mask id="m">
+                <g class="cloud1" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,100)" style="translate: none; rotate: none; scale: none;">
+                  <rect fill="#fff" width="100%" height="801" y="799"></rect>
+                  <image xlink:href="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800"></image>
+                </g>
+              </mask>
+              
+              <image class="sky" xlink:href="img/sky-bw.png" width="1200" height="590" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)" style="translate: none; rotate: none; scale: none;"></image>
+              <image class="mountBg" xlink:href="img/mountBg-bw.png" width="1200" height="800" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,-10)" style="translate: none; rotate: none; scale: none;"></image>    
+              <image class="mountMg" xlink:href="img/mountMg-bw.png" width="1200" height="800" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,-30)" style="translate: none; rotate: none; scale: none;"></image>    
+              <image class="cloud2" xlink:href="img/cloud2-bw.png" width="1200" height="800" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,-150)" style="translate: none; rotate: none; scale: none;"></image>    
+              <image class="mountFg" xlink:href="img/mountFg-bw.png" width="1200" height="800" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,-50)" style="translate: none; rotate: none; scale: none;"></image>
+              <image class="cloud1" xlink:href="img/cloud1-bw.png" width="1200" height="800" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,100)" style="translate: none; rotate: none; scale: none;"></image>
+              <image class="cloud3" xlink:href="img/cloud3-bw.png" width="1200" height="800" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,-50)" style="translate: none; rotate: none; scale: none;"></image>
+              <text fill="#fff" x="150" y="300">VISHWAPRENEUR</text>
+              <!-- <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250"></polyline> -->
+              
+              <g mask="url(#m)">
+                <rect fill="black" width="100%" height="100%"></rect>      
+                <text x="350" y="450" fill="white">FURTHER</text>
+              </g>
+              
+              <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"></rect>
+            </svg>
+          </div>
+    </div>
+
+    <div class="f-timer">
+        <div class="timer">
+            <!-- <h1>Mark the date</h1> -->
+            <div class="test">
+                <div class="flipTimer">
+                    <div class="daydet">
+                        <div class="days">
+                        </div>
+                        <p style="color: #FFF; font-size: 2rem; text-align: center; font-family: 'Montserrat', sans-serif;padding-right: 20px;">Days</p>
+                    </div>
+                    <div class="daydet">
+                        <div class="hours">
+                            
+                        </div>
+                        <p style="color: #FFF; font-size: 2rem; text-align: center;font-family: 'Montserrat', sans-serif;padding-right: 20px;">Hours</p>
+                    </div>
+                    <div class="daydet">
+                        <div class="minutes">
+                            
+                        </div>
+                        <p style="color: #FFF; font-size: 2rem; text-align: center;font-family: 'Montserrat', sans-serif;padding-right: 15px;">Minutes</p>
+                    </div>
+                    <div class="daydet">
+                        <div class="seconds">
+                            
+                        </div>
+                        <p style="color: #FFF; font-size: 2rem; text-align: center;font-family: 'Montserrat', sans-serif;padding-right: 20px;">Seconds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="guest">
+        <div class="container">
+            <div class="row">
+                <text class="text">GUEST</text>
+                <div class="col-md-12">
+                    <!--<div class="testmonial_slider_area text-center owl-carousel">-->
+                        <div class="box-area">
+                            <div class="img-area">
+                                <img src="img/1.jpg" alt="">
+                            </div>
+                            <h4>Person's name</h4>
+                            <span>Designation Goes Here</span>
+                            <p class="content">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since
+                            </p>
+                            <h6 class="socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                            </h6>
+                        </div>
+
+                        <div class="box-area">
+                            <div class="img-area">
+                                <img src="img/2.jpg" alt="">
+                            </div>
+                            <h4>Person's name</h4>
+                            <span>Designation Goes Here</span>
+                            <p class="content">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since
+                            </p>
+                            <h6 class="socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                            </h6>
+                        </div>
+
+                        <div class="box-area">
+                            <div class="img-area">
+                                <img src="img/3.jpg" alt="">
+                            </div>
+                            <h4>Person's name</h4>
+                            <span>Designation Goes Here</span>
+                            <p class="content">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since
+                            </p>
+                            <h6 class="socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                            </h6>
+                        </div>
+
+                        <div class="box-area">
+                            <div class="img-area">
+                                <img src="img/4.jpg" alt="">
+                            </div>
+                            <h4>Person's name</h4>
+                            <span>Designation Goes Here</span>
+                            <p class="content">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since
+                            </p>
+                            <h6 class="socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                            </h6>
+                        </div>
+
+                        <div class="box-area">
+                            <div class="img-area">
+                                <img src="https://avatarfiles.alphacoders.com/970/thumb-97021.png" alt="">
+                            </div>
+                            <h4>Person's name</h4>
+                            <span>Designation Goes Here</span>
+                            <p class="content">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since
+                            </p>
+                            <h6 class="socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                            </h6>
+                        </div>
+
+                        <div class="box-area">
+                            <div class="img-area">
+                                <img src="image6.jpg" alt="">
+                            </div>
+                            <h4>Person's name</h4>
+                            <span>Designation Goes Here</span>
+                            <p class="content">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                ever since
+                            </p>
+                            <h6 class="socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+<script src="parallax.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.flipTimer').flipTimer({
+
+            // count up or countdown
+            direction: 'down',
+
+            // the target <a href="https://www.jqueryscript.net/time-clock/">date</a>
+            date: 'March 4, 2023 01:00:00',        //VP Date
+
+            // callback works only with direction = "down"
+            callback: function () { alert('Event Started'); }
+
+        });
+    });
+</script>
+</body>
+</html>

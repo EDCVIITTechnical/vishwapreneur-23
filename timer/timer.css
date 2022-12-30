@@ -1,0 +1,98 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.f-timer{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100rem; */
+    /* height: 100vh; */
+    margin-left: 3vw;
+    font-family: 'Poppins', sans-serif;
+}
+/* .days{
+    display: flex;
+} */
+
+.daydet {
+    display: block;
+    width: 10.3rem;
+    height: 6rem;
+}
+
+.timer {
+    /* height: 100vh; */
+    width: 100rem;
+    justify-content: center;
+}
+
+.timer h1 {
+    color:black;
+    text-align: center;
+    font-size: 58px;
+    margin-bottom: 58px;
+}
+
+.timer .flipTimer{
+    padding-left: 16.5rem;
+    align-items: center;
+    position: relative;
+    padding-right: 16.5rem;
+}
+
+/* .det {
+    display: flex;
+} */
+
+.timer .test {
+    height: 40vh;
+    padding-top: 9rem;
+}
+
+.flipTimer {
+    display:grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+
+.flipTimer .days p{
+    font-size: 2rem;
+    height: 2rem;
+}
+
+.flipTimer .hours p{
+    font-size: 2rem;
+    height: 5rem;
+}
+
+.flipTimer .minutes p{
+    font-size: 2rem;
+    height: 5rem;
+}
+
+.flipTimer .seconds p{
+    font-size: 2rem;
+    height: 5rem;
+} 
+
+@media only screen and (max-width: 723px){
+    .flipTimer {
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-row-gap: 5rem;
+        grid-gap: 5rem;
+    }
+}
+
+@media (min-width: 723px) and (max-width: 1050px) {
+    .flipTimer {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-row-gap: 5rem;
+        grid-gap: 5rem;
+    }
+}
+
+
