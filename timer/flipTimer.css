@@ -55,7 +55,7 @@
     transform: perspective(400px) rotateX(0deg); } }
 
 .flipTimer {
-  color: gold;
+  color: #ffb30e;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 90px;
   font-weight: bold;
