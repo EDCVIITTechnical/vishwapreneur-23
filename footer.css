@@ -24,8 +24,8 @@ body {
 .footer {
   height: 240px;
   width: 100%;
-  /* background-image: radial-gradient(circle at 24.1% 68.8%, #130F40 0%, #000000  80%); */
-  background: rgba(20, 20, 20, 0.984);
+  background-image: radial-gradient(circle at 24.1% 68.8%, #130F40 0%, #000000  80%);
+  /* background: rgba(20, 20, 20, 0.984); */
   color: #fff;
   /* font-family: "Montserrat", sans-serif; */
   font-family: 'Poppins', sans-serif;
