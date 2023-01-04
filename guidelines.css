@@ -1,0 +1,96 @@
+.sec-guidelines {
+    padding: .3rem;
+    margin: 3vw;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    /* text-align: center; */
+    /* background-image: linear-gradient(135deg,#000000,#130F40); */
+    background-image: radial-gradient(circle at 24.1% 68.8%, #130F40 0%, #000000  80%);
+    border-radius: 3vw;
+    
+}
+
+
+
+h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: .5rem;
+    font-weight: 10px;
+    padding-top: 3vh;
+}
+
+h2 {
+    color: rgb(255, 171, 15);
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.container {
+    display: flex;
+    /* height: 60rem; */
+}
+
+ .animate {
+    color: white;
+    padding-top: 0.6rem;
+    /* background-color: black; */
+    width: 50%;
+    height: 22rem;
+    text-align: justify;
+    padding-left: 5.5rem;
+    /* border-right: solid white 1px; */
+    padding-right: 5.5rem;
+}
+ .guidelines {
+    color: silver;
+    padding-top: 0.6rem;
+    /* background-color: black; */
+    width: 50%;
+    height: 22rem;
+    text-align: justify;
+    border-right: solid white 1px;
+    padding-right: 5.5rem;
+    padding-left: 5.5rem;
+    margin-bottom: 2vh;
+}
+
+.guidelines h2 {
+    font-size: 1.7rem;
+    padding-bottom: 2rem;
+}
+
+.guidelines li {
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 0rem;
+    color: rgb(255, 171, 15);
+}
+
+.guidelines p{
+    font-size: 0.8rem;
+    padding-bottom: 1.2rem;
+}
+
+.animate li p {
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(255, 171, 15);
+}
+
+.animate ul li  {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgb(255, 171, 15);
+}
+
+.animate ul li ol li {
+    padding-top: 0;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    color: silver   ;
+}

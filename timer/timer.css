@@ -12,6 +12,7 @@
     /* height: 100vh; */
     margin-left: 3vw;
     font-family: 'Poppins', sans-serif;
+    margin-top: 8vh;
 }
 /* .days{
     display: flex;
@@ -43,13 +44,11 @@
     padding-right: 16.5rem;
 }
 
-/* .det {
-    display: flex;
-} */
+
 
 .timer .test {
     height: 40vh;
-    padding-top: 9rem;
+    padding-top: 6vh;
 }
 
 .flipTimer {
@@ -76,6 +75,17 @@
     font-size: 2rem;
     height: 5rem;
 } 
+.timer-text{
+    align-items: center;
+	justify-content: center;
+	margin-left:27% ;
+	/* padding-bottom: 2vh; */
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size:70px;
+	text-align:center;
+    margin-top: 5vh;
+}
 
 @media only screen and (max-width: 723px){
     .flipTimer {

@@ -40,7 +40,21 @@
   display:flex;
   padding-bottom: 0.5vw;
 }
-
+.top div details:hover{
+  box-shadow: rgba(255, 171, 15, 0.8) 3px 3px ;
+	scale: 1.02;
+	transition-duration : 0.4s;
+}
+.mid div details:hover{
+  box-shadow: rgba(255, 171, 15, 0.8) 3px 3px ;
+	scale: 1.02;
+	transition-duration : 0.4s;
+}
+.bottom div details:hover{
+  box-shadow: rgba(255, 171, 15, 0.8) 3px 3px ;
+	scale: 1.02;
+	transition-duration : 0.4s;
+}
 
 .mid{
   display:flex;
