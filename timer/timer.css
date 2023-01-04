@@ -10,9 +10,15 @@
     align-items: center;
     /* width: 100rem; */
     /* height: 100vh; */
+    padding-top: 5vh;
     margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 3vw;
     font-family: 'Poppins', sans-serif;
     margin-top: 8vh;
+    /* background-image: radial-gradient(circle at 24.1% 68.8%, #130F40 0%, #000000  80%); */
+    background: rgba(20, 20, 20, 0.984);
+    border-radius: 3vw;
 }
 /* .days{
     display: flex;
@@ -38,10 +44,10 @@
 }
 
 .timer .flipTimer{
-    padding-left: 16.5rem;
+    padding-left: 15.5rem;
     align-items: center;
     position: relative;
-    padding-right: 16.5rem;
+    padding-right: 13.5rem;
 }
 
 

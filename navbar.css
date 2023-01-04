@@ -57,33 +57,33 @@ li{
 .nv-line:after{
     content: "";
     position: absolute;
-    background-color: #6F38C5;
+    background-color: rgba(255, 171, 15, 1);
     height: 3px;
     width: 0;
     left: 0;
     bottom: -10px;
     transition: 0.2s;
     box-shadow:
-    0 0 7px #6F38C5,
-    0 0 10px #6F38C5,
-    0 0 21px #6F38C5,
-    0 0 42px #6F38C5,
-    0 0 82px #6F38C5,
-    0 0 92px #6F38C5,
-    0 0 102px #6F38C5,
-    0 0 151px #6F38C5;
+    0 0 7px rgba(255, 171, 15, 1),
+    0 0 10px rgba(255, 171, 15, 1),
+    0 0 21px rgba(255, 171, 15, 1),
+    0 0 42px rgba(255, 171, 15, 1),
+    0 0 82px rgba(255, 171, 15, 1),
+    0 0 92px rgba(255, 171, 15, 1),
+    0 0 102px rgba(255, 171, 15, 1),
+    0 0 151px rgba(255, 171, 15, 1);
 }
 .nv-line:hover{
-    color: #6F38C5;
+    color: rgba(255, 171, 15, 1);
     text-shadow:
-    0 0 7px #6F38C5,
-    0 0 10px #6F38C5,
-    0 0 21px #6F38C5,
-    0 0 42px #6F38C5,
-    0 0 82px #6F38C5,
-    0 0 92px #6F38C5,
-    0 0 102px #6F38C5,
-    0 0 151px #6F38C5;
+    0 0 7px rgba(255, 171, 15, 1),
+    0 0 10px rgba(255, 171, 15, 1),
+    0 0 21px rgba(255, 171, 15, 1),
+    0 0 42px rgba(255, 171, 15, 1),
+    0 0 82px rgba(255, 171, 15, 1),
+    0 0 92px rgba(255, 171, 15, 1),
+    0 0 102px rgba(255, 171, 15, 1),
+    0 0 151px rgba(255, 171, 15, 1);
     transition: 0.2s;
     /* text-decoration: none; */
     
@@ -91,7 +91,7 @@ li{
 .nv-line:hover:after{
     width: 100%;
     transition: 0.2s;
-    
+
 }
 .nv-checkbtn{
     font-size: 30px;
