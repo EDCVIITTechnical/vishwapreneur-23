@@ -25,9 +25,9 @@ body {
 }
 
 .box-area:hover {
-	box-shadow: rgba(255, 171, 15, 0.8) 10px 10px 30px;
-	scale: 1.02;
-	transition-duration : 0.5s;
+	box-shadow: rgba(255, 171, 15, 0.8) 10px 10px 30px ;
+	scale: 1.02 ;
+	transition-duration : 0.5s !important ;
 }
 
 .box-area h4 {
