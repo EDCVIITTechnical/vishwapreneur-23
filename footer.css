@@ -112,6 +112,7 @@ body {
 .sitemap-links-heading {
     font-family: 'Montserrat', sans-serif;
   color: rgb(255, 171, 15);
+  font-size: 1 rem;
 }
 
 .sitemap-links > .link-item {
@@ -166,7 +167,45 @@ body {
         justify-content: center;
         margin-right: 20px;
        
-    }
+    }  
+}
 
+
+p{
+  font-size: 1.4rem;
+  font-style:normal;
+}
+a{
+  font-size: 1.2rem;
+}
+.ltext{
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 480px){
+  .sitemap-section{
+    /* justify-content: center; */
+    margin-left: 70px;
+  }
+    /* .head2{
+      text-align: center; 
+    }
+    .subscribe-subtext{
+      text-align: center; */
     
+    h2{
+      padding-bottom: 0.1rem;
+    }
+    .subscribe-section{
+      padding-bottom:0.3rem;
+    }
+    p{
+      font-size: 1rem;
+      font-style:normal;
+    }
+    a{
+      font-size: 0.85rem;
+    }
+    .ltext{
+      font-size: 0.85rem;
+    }
 }

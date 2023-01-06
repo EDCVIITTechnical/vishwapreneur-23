@@ -94,3 +94,34 @@ h2 {
     text-align: justify;
     color: silver   ;
 }
+
+
+@media only screen and (max-width: 723px) {
+    .sec-guidelines h1 {
+        font-size: 1.6rem;
+        
+    }
+
+    .sec-guidelines h2 {
+        font-size: 1.2rem;
+        padding-bottom: 0rem;
+    }
+
+    .sec-guidelines .container {
+        height: 157vh;
+        width: 100%;
+        flex-direction: column;
+        margin-top: -13vh;
+    }
+    .guidelines {
+        padding-bottom: 13rem;
+    }
+
+    .guidelines li {
+        padding-bottom: 1rem;
+    }
+
+    .animate p {
+        padding-bottom: 1rem;
+    }
+}
