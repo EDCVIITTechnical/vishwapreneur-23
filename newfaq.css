@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 
-.box{
+.box {
   width: 820px;
   margin: 100px auto;
   background: #fff;
   border-radius: 7px;
-  box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
   /* display: */
 }
-.questions{
-  display:flex;
+.questions {
+  display: flex;
   flex-direction: row;
   flex-flow: row wrap;
   width: 60%;
-  margin:10px;
+  margin: 10px;
   padding-left: 19vw;
   color: #ffab0f;
 }
-.sec-faq{
+.sec-faq {
   margin-top: 5vh;
 }
 
-.box .heading{
-  background: #7800CF;
+.box .heading {
+  background: #7800cf;
   border-radius: 7px 7px 0px 0px;
   padding: 10px;
   color: #fff;
@@ -30,44 +30,44 @@
   font-family: "Rubik";
 }
 
-.faqs{
+.faqs {
   padding: 0px 20px 20px;
 }
 
-::-webkit-details-marker{
+::-webkit-details-marker {
   float: right;
   margin-top: 10px;
 }
-.top{
-  display:flex;
+.top {
+  display: flex;
   padding-bottom: 0.5vw;
 }
-.top div details:hover{
-  box-shadow: rgba(255, 171, 15, 0.8) 3px 3px ;
-	scale: 1.02;
-	transition-duration : 0.4s;
+.top div details:hover {
+  box-shadow: rgba(255, 171, 15, 0.8) 3px 3px;
+  scale: 1.02;
+  transition-duration: 0.4s;
 }
-.mid div details:hover{
-  box-shadow: rgba(255, 171, 15, 0.8) 3px 3px ;
-	scale: 1.02;
-	transition-duration : 0.4s;
+.mid div details:hover {
+  box-shadow: rgba(255, 171, 15, 0.8) 3px 3px;
+  scale: 1.02;
+  transition-duration: 0.4s;
 }
-.bottom div details:hover{
-  box-shadow: rgba(255, 171, 15, 0.8) 3px 3px ;
-	scale: 1.02;
-	transition-duration : 0.4s;
+.bottom div details:hover {
+  box-shadow: rgba(255, 171, 15, 0.8) 3px 3px;
+  scale: 1.02;
+  transition-duration: 0.4s;
 }
 
-.mid{
-  display:flex;
+.mid {
+  display: flex;
   padding-bottom: 0.5vw;
 }
-.bottom{
-  display:flex;
+.bottom {
+  display: flex;
   padding-bottom: 0.5vw;
 }
 
-details{
+details {
   margin: 0 0.5vw;
   background: rgba(20, 20, 20, 0.984);
   /* background-image: radial-gradient(circle at 24.1% 68.8%, #130F40 0%, #000000  80%); */
@@ -78,27 +78,59 @@ details{
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
-  width:350px;
+  width: 350px;
 }
 
-details summary{
+details summary {
   outline: none;
   width: 400px;
   height: 20px;
 }
-.faq-text{
+.faq-text {
   align-items: center;
-	justify-content: center;
-	margin-left:43% ;
-	/* padding-bottom: 2vh; */
-	color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	font-size:70px;
-	text-align:center;
-  
+  justify-content: center;
+  margin-left: 43%;
+  /* padding-bottom: 2vh; */
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  text-align: center;
 }
-.answer{
+.answer {
   padding-top: 1vw;
   padding-bottom: 1vw;
   color: silver;
+}
+
+@media only screen and (max-width: 723px) {
+  .sec-faq details {
+    width: 300px;
+  }
+
+  .faq-text {
+    font-size: 2.5rem;
+    padding-left: 1rem;
+  }
+
+  .sec-faq {
+    margin-left: -22vw;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .top {
+    flex-direction: column;
+  }
+
+  .mid {
+    flex-direction: column;
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  details summary {
+    font-size: 0.8rem;
+  }
 }

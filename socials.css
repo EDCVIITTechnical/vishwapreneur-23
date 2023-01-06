@@ -1,0 +1,136 @@
+.sec-socials {
+  margin-top: -22vh;
+}
+
+.youtube {
+  display: flex;
+  margin-top: 4rem;
+  padding-right: 2rem;
+  align-items: center;
+}
+
+.youtube1 {
+  max-width: 50px;
+  height: 100px;
+  padding-bottom: 25rem;
+  padding-left: 10rem;
+}
+
+.youtube2 {
+  max-width: 50px;
+  height: 100px;
+  padding-left: 38rem;
+  padding-bottom: 25rem;
+}
+
+.iframetag {
+  border-radius: 10px;
+}
+
+.socialmedia {
+  display: flex;
+  margin-top: -20vh;
+  padding-bottom: 2rem;
+}
+
+.linkedin1 {
+  padding-top: 0rem;
+  display: flex;
+  padding-left: 4rem;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 2%;
+}
+
+.twitter {
+  padding-top: 0rem;
+  position: static;
+  visibility: visible;
+  width: 347px;
+  height: 344px;
+  display: block;
+  flex-grow: 1;
+  padding-right: 4rem;
+  margin-right: 4%;
+}
+
+.om {
+  padding-top: 1rem;
+  border-radius: 5rem;
+  padding-right: 60rem;
+}
+
+@media only screen and (max-width: 723px) {
+  h1 {
+    /* padding-top: 3rem; */
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    margin-left: 3vw;
+  }
+
+  .sec-socials {
+    padding-bottom: 3rem;
+    align-items: center;
+    margin-top: -22vh;
+  }
+
+  .sec-socials .youtube {
+    flex-direction: column;
+    padding-left: 2rem;
+  }
+
+  .youtube1 {
+    padding-bottom: 15rem;
+    padding-left: 0;
+  }
+
+  .youtube2 {
+    padding-left: 0rem;
+  }
+
+  .youtube1 .iframetag {
+    width: 320px;
+  }
+
+  .youtube2 .iframetag {
+    width: 320px;
+  }
+
+  .socialmedia {
+    flex-direction: column;
+    margin-top: -15vh;
+  }
+  .linkedin1 .iframetag {
+    width: 300px;
+    padding-right: 5rem;
+    margin-left: -5vw;
+    margin-top: -5vh;
+    border-radius: 0;
+    padding-bottom: 1rem;
+  }
+
+  .twitter .twitter-tweet {
+    width: 300px;
+    padding-right: 5rem;
+    margin-left: -29vw;
+    /* margin-top: -5vh; */
+    border-radius: 0;
+  }
+
+  .linkedin2 {
+    padding-bottom: 2rem;
+    margin-left: 15vw;
+  }
+
+  .twitter {
+    padding-bottom: 4rem;
+  }
+  .linkedin2 .iframetag {
+    width: 300px;
+    padding-right: 5rem;
+    margin-left: -3vw;
+    border-radius: 0;
+  }
+}
