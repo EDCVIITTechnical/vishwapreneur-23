@@ -11,10 +11,8 @@
 }
 nav{
   text-decoration: none;
-
 }
 .nav{
-  
     height: 10vh;
     width: 100%;
     /* min-width: 600px; */
@@ -37,7 +35,7 @@ nav{
     position: relative;
     text-decoration: none;
     font-family: 'Poppins',sans-serif;
-    color: #6F38C5;
+    color: rgb(255, 171, 15);
     font-size: 15px;
     letter-spacing: 0.5px;
     margin: 0 2vw;
@@ -45,6 +43,7 @@ nav{
 }
 .nv-ul{
     display: flex;
+    
 }
 li{
   list-style: none;
@@ -57,33 +56,33 @@ li{
 .nv-line:after{
     content: "";
     position: absolute;
-    background-color: #6F38C5;
+    background-color: rgb(255, 171, 15);
     height: 3px;
     width: 0;
     left: 0;
     bottom: -10px;
     transition: 0.2s;
     box-shadow:
-    0 0 7px #6F38C5,
-    0 0 10px #6F38C5,
-    0 0 21px #6F38C5,
-    0 0 42px #6F38C5,
-    0 0 82px #6F38C5,
-    0 0 92px #6F38C5,
-    0 0 102px #6F38C5,
-    0 0 151px #6F38C5;
+    0 0 7px rgb(255, 171, 15),
+    0 0 10px rgb(255, 171, 15),
+    0 0 21px rgb(255, 171, 15),
+    0 0 42px rgb(255, 171, 15),
+    0 0 82px rgb(255, 171, 15),
+    0 0 92px rgb(255, 171, 15),
+    0 0 102px rgb(255, 171, 15),
+    0 0 151px rgb(255, 171, 15);
 }
 .nv-line:hover{
-    color: #6F38C5;
+    color: rgb(255, 171, 15);
     text-shadow:
-    0 0 7px #6F38C5,
-    0 0 10px #6F38C5,
-    0 0 21px #6F38C5,
-    0 0 42px #6F38C5,
-    0 0 82px #6F38C5,
-    0 0 92px #6F38C5,
-    0 0 102px #6F38C5,
-    0 0 151px #6F38C5;
+    0 0 7px rgb(255, 171, 15),
+    0 0 10px rgb(255, 171, 15),
+    0 0 21px rgb(255, 171, 15),
+    0 0 42px rgb(255, 171, 15),
+    0 0 82px rgb(255, 171, 15),
+    0 0 92px rgb(255, 171, 15),
+    0 0 102px rgb(255, 171, 15),
+    0 0 151px rgb(255, 171, 15);
     transition: 0.2s;
     /* text-decoration: none; */
     
@@ -91,11 +90,11 @@ li{
 .nv-line:hover:after{
     width: 100%;
     transition: 0.2s;
-
+    
 }
 .nv-checkbtn{
     font-size: 30px;
-    color: #6F38C5;
+    color: rgb(255, 171, 15);
     float: right;
     line-height: 80px;
     margin-right: 30px;
@@ -109,17 +108,22 @@ li{
 
   /* mobile media query */
 @media (max-width: 858px){
+  .nav{
+    
+    justify-content: flex-start;
+  }
     .nv-checkbtn{
       display: block;
     }
     .nv-ul{
       position: fixed;
-      width: 100%;
+      width: 100vw;
       height: 100vh;
       background: black;
-      top: 80px;
+      top: 10vh;
       left: -100%;
-      text-align: center;
+      text-align: flex-start;
+      
       transition: all .5s;
     }
     .nv-grid-list {
@@ -129,14 +133,13 @@ li{
         
       }
     .nv-li{
-      
+      padding-left: 8vw;
       margin-top: 20px; 
       
     }
     
     .nv-nav{
-        display: flex;
-        
+      display: flex;  
       justify-content: flex-start;
     }
     .nv-li a{

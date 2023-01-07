@@ -10,6 +10,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
     <!--Stylesheet-->
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="button style.css">
     <link rel="stylesheet" href="parallax.css">
     <link rel="stylesheet" href="newfaq.css">
     <link rel="stylesheet" href="guidelines.css">
@@ -23,6 +24,8 @@
     <link rel="stylesheet" href="guests.css">
     <!-- gallery -->
     <link rel="stylesheet" href="gallery2.css">
+    <!-- loader -->
+    <link rel="stylesheet" href="loader.css">
     <!-- sponsors -->
     <link rel="stylesheet" href="sponsors1.css">
     <!-- reviews -->
@@ -38,28 +41,34 @@
     <!-- footer -->
     <link rel="stylesheet" href="footer.css">
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Vishwapreneur | Rise to the Zenith!</title>
     <nav class="nav">
         <input type="checkbox" id="check">
         <label for="check" class="nv-checkbtn">
-            <i class="fas fa-bars"></i>
+            <i class="fa fa-bars"></i>
         </label>
+        <a href=""><img src="img/vp-logo.png" alt="" style="height: 50px;padding-top: 5px;left: 0;display: fixed;"></a>
         <ul class="nv-grid-list nv-ul">
-            <li><a class="nv-line nv-li" href="#Home">Home</a></li>
-            <li><a class="nv-line nv-li" href="#Home">Schedule</a></li>
+            <li><a class="nv-line nv-li" href="#home">Home</a></li>
+            <li><a class="nv-line nv-li" href="#home">Schedule</a></li>
             <li><a class="nv-line nv-li" href="#Guests">Guests</a></li>
-            <li><a class="nv-line nv-li" href="#Gallery">Gallery</a></li>
+            <li><a class="nv-line nv-li" href="#gallery">Gallery</a></li>
             <li><a class="nv-line nv-li" href="#FAQ">FAQ</a></li>
-            <li><a class="nv-line nv-li" href="#contact">Connect</a></li>
+            <li><a class="nv-line nv-li" href="#footer">Connect</a></li>
         </ul>
     </nav>
 </head>
 
 <body>
-    <div class="parallax">
+    <div id="loader">
+        <div data-text="Vishwapreneur..."class="loader">Vishwapreneur...</div>
+    </div>
+    <div id="home" class="parallax">
         <div
             style="translate: none;justify-content: center;align-items: center; rotate: none; top: 0px; height: 100%; width: 100%;">
+            
             <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+                
                 <mask id="m">
                     <g class="cloud1" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,100)"
                         style="translate: none; rotate: none; scale: none;">
@@ -83,22 +92,37 @@
                     transform="matrix(1,0,0,1,0,100)" style="translate: none; rotate: none; scale: none;"></image>
                 <image class="cloud3" xlink:href="img/cloud3-bw.png" width="1200" height="800" data-svg-origin="0 0"
                     transform="matrix(1,0,0,1,0,-50)" style="translate: none; rotate: none; scale: none;"></image>
-                <text fill="#fff" x="150" y="300">VISHWAPRENEUR</text>
-                <!-- <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250"></polyline> -->
-
+                <!-- <image xlink:href="img/vp-logo.png" x="430" y="260" height="300" width="300"></image> -->
+                <text class="vish" fill="#fff" x="200" y="200">VISHWAPRENEUR'23</text>
+                <text class="tagline" fill="#ffab0f" x="330" y="250">Rise to the Zenith!</text>
+                
+                
+                <!-- <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" ></polyline> -->
+                
                 <g mask="url(#m)">
                     <rect fill="black" width="100%" height="100%"></rect>
-                    <text x="350" y="550" fill="white">FURTHER</text>
-                    <text x="350" y="650" fill="white">LETS GO</text>
-                    <line x1="0" y1="800" x2="100%" y2="800" style="stroke:#ffab0f;stroke-width:10" />
+                    <!-- <text x="350" y="550" fill="white">FURTHER</text> -->
+                    <text x="400" y="650" fill="white" style="font-size:40px">Register Now</text>
+                    <foreignObject x="500" y="650" width="160" height="160">
+                        <button class="btn btn2" href="#home">Register</button>
+                    </foreignObject>
+                    <line x1="0" y1="800" x2="100%" y2="800" style="stroke:#ffab0f;stroke-width:5" />
                 </g>
-
-                <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"></rect>
+                
+                <!-- <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"></rect> -->
             </svg>
+            <div class="about" style="display: flex;">
+                <img src="img/vp-logo.png" style="height: 370px;" alt="">
+                <div class="about-cnt">
+                    <h2>About Vishwapreneur</h2>
+                    <p>Vishwapreneur is a National Level Entrepreneurial Summit showcasing entrepreneurs, creators and innovative minds of our century who had the courage to think out of the box. Vishwapreneur is a platform for budding entrepreneurs to seek motivation & guidance through the experiences of successful business tycoons.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="f-timer" data-aos="fade-up" data-aos-duration="2000">
+    <div id="timer" class="f-timer" data-aos="fade-up" data-aos-duration="2000">
         <div class="timer">
             <!-- <h1>Mark the date</h1> -->
             <text class="timer-text">Event starts in</text>
@@ -139,7 +163,7 @@
             </div>
         </div>
     </div>
-    <div id = "Guests" class="guest">
+    <div id="Guests" class="guest">
         <div class="container ">
             <div class="row">
                 <text class="text">GUEST</text>
@@ -158,10 +182,10 @@
                             ever since
                         </p>
                         <h6 class="socials">
-                            <i class="fa fa-instagram"></i>
+                            <!-- <i class="fa fa-instagram"></i> -->
                             <i class="fa fa-facebook"></i>
                             <i class="fa fa-linkedin"></i>
-                            <i class="fa fa-youtube"></i>
+                            <!-- <i class="fa fa-youtube"></i> -->
                         </h6>
                     </div>
 
@@ -177,10 +201,10 @@
                             ever since
                         </p>
                         <h6 class="socials">
-                            <i class="fa fa-instagram"></i>
+                            <!-- <i class="fa fa-instagram"></i> -->
                             <i class="fa fa-facebook"></i>
                             <i class="fa fa-linkedin"></i>
-                            <i class="fa fa-youtube"></i>
+                            <!-- <i class="fa fa-youtube"></i> -->
                         </h6>
                     </div>
 
@@ -196,10 +220,10 @@
                             ever since
                         </p>
                         <h6 class="socials">
-                            <i class="fa fa-instagram"></i>
+                            <!-- <i class="fa fa-instagram"></i> -->
                             <i class="fa fa-facebook"></i>
                             <i class="fa fa-linkedin"></i>
-                            <i class="fa fa-youtube"></i>
+                            <!-- <i class="fa fa-youtube"></i> -->
                         </h6>
                     </div>
 
@@ -215,10 +239,10 @@
                             ever since
                         </p>
                         <h6 class="socials">
-                            <i class="fa fa-instagram"></i>
+                            <!-- <i class="fa fa-instagram"></i> -->
                             <i class="fa fa-facebook"></i>
                             <i class="fa fa-linkedin"></i>
-                            <i class="fa fa-youtube"></i>
+                            <!-- <i class="fa fa-youtube"></i> -->
                         </h6>
                     </div>
 
@@ -234,10 +258,10 @@
                             ever since
                         </p>
                         <h6 class="socials">
-                            <i class="fa fa-instagram"></i>
+                            <!-- <i class="fa fa-instagram"></i> -->
                             <i class="fa fa-facebook"></i>
                             <i class="fa fa-linkedin"></i>
-                            <i class="fa fa-youtube"></i>
+                            <!-- <i class="fa fa-youtube"></i> -->
                         </h6>
                     </div>
 
@@ -253,10 +277,10 @@
                             ever since
                         </p>
                         <h6 class="socials">
-                            <i class="fa fa-instagram"></i>
+                            <!-- <i class="fa fa-instagram"></i> -->
                             <i class="fa fa-facebook"></i>
                             <i class="fa fa-linkedin"></i>
-                            <i class="fa fa-youtube"></i>
+                            <!-- <i class="fa fa-youtube"></i> -->
                         </h6>
                     </div>
                 </div>
@@ -264,7 +288,7 @@
         </div>
     </div>
 
-    <div class="sec-sponsors" data-aos="fade-up" data-aos-duration="2000">
+    <!-- <div id="sponsors" class="sec-sponsors" data-aos="fade-up" data-aos-duration="2000">
         <text class="sponsors-text">Sponsors</text>
         <div class="container">
             <div class="carousel">
@@ -351,111 +375,11 @@
                 </button>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="sec-faq" id="FAQ">
-        <!-- <div class="box"> -->
-        <!-- <p class="heading">FAQs</p> -->
-        <text class="faq-text">FAQ's</text>
-        <div class="faqs">
-            <div class="questions">
-                <div class="top" data-aos="fade-right" data-aos-duration="2000">
-                    <div>
-                        <details>
-                            <summary> What is Vishwapreneur?</summary>
-                            <p class="answer">Vishwapreneur is a National Level Entrepreneurial Summit showcasing
-                                entrepreneurs, creators and innovative minds of our century who had the courage to think
-                                out
-                                of the box. Vishwapreneur is a platform for budding entrepreneurs to seek motivation &
-                                guidance through the experiences of successful business tycoons.</p>
-                        </details>
-                    </div>
-                    <div>
-                        <details>
-                            <summary> Who can participate in the event?</summary>
-                            <p class="answer">Anyone and everyone interested in entrepreneurship and wants to do
-                                something different from the rest of the people should participate in the event.</p>
-                        </details>
-                    </div>
-
-                </div>
-                <div class="mid" data-aos="fade-left" data-aos-duration="2000">
-                    <div>
-                        <details>
-                            <summary> How to register for the event?</summary>
-                            <p class="answer">You can register through our website www.vishwapreneur.in</p>
-                        </details>
-                    </div>
-                    <div>
-                        <details>
-                            <summary> Can we participate in more than one event?</summary>
-                            <p class="answer">Yes ofcourse.</p>
-                        </details>
-                    </div>
-                </div>
-                <div class="bottom" data-aos="fade-right" data-aos-duration="2000">
-                    <div>
-                        <details>
-                            <summary>What is the duration of the events?</summary>
-                            <p class="answer">The event will be held for 2 days.</p>
-                        </details>
-                    </div>
-                    <div>
-                        <details>
-                            <summary> In what mode will the events be held?</summary>
-                            <p class="answer">The event will be held in offline mode.</p>
-                        </details>
-                    </div>
-                </div>
-                <div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="sec-guidelines" data-aos="fade-up" data-aos-duration="2000">
-        <h1>EVENT GUIDELINES</h1>
-        <h2>Terms & Conditions</h2>
-        <div class="container">
-            <div class="guidelines">
-                <ul>
-                    <li>Age Limit</li>
-                    <p>Any person above the age of 13 is allowed to join us for Vishwapreneur'23 </p>
-                    <li>Privacy Policy</li>
-                    <p> By registering for Vishwapreneur'23, you consent to the collection and use of this information
-                        as set forth. </p>
-                    <li>Advertisements & Promotions</li>
-                    <p>This website may contain links to third-party websites, products, or services, which may be
-                        posted by our affiliates, our partners, or our sponsor any kind of promotion regarding them is
-                        not allowed.</p>
-                    <li>Ticket Booking Policy</li>
-                    <p> Once you book a seat for this event, it can not be cancelled under any circumstances and any
-                        request for fare refund will not be entertained.</p>
-                </ul>
-            </div>
-            <div class="animate">
-                <!-- <h2>Hello</h2> -->
-                <ul>
-                    <li>
-                        <p>Following actions are impermissible</p>
-                        <ol>
-                            <li>Use the information in any manner that could interfere with, disable, disrupt,
-                                overburden, or otherwise impair the Service</li>
-                            <li>Use the website in any manner that we reasonably believe to be an abuse of or fraud on
-                                any payment system.</li>
-                            <li>Access, search, or collect data about Vishwapreneur by any means (automated or
-                                otherwise) except as permitted in these Terms or in a separate agreement with EDC VIIT.
-                            </li>
-                            <li>Any political comment will not be tolerated regarding Vishwapreneur.</li>
-                            <li>Legal actions will be taken if any kind of malpractice is found.</li>
-                        </ol>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
     
-    <div class="sec-gallery">
+
+    <div id="gallery" class="sec-gallery">
         <section class="section">
             <text class="gallery-text">Event Gallery</text>
             <div class="grid container-gallery">
@@ -512,8 +436,7 @@
                 <!-- on-click full screen photos -->
                 <div class="popup-img">
                     <span>&times;</span>
-                    <img src="https://edcviit.com/vishwapreneur/assets/img/gallery/Prajakta-koli.png"
-                        alt="">
+                    <img src="https://edcviit.com/vishwapreneur/assets/img/gallery/Prajakta-koli.png" alt="">
                 </div>
                 <!-- <div class="popup-img1">
                     <span>&times;</span>
@@ -521,28 +444,23 @@
                   </div> -->
                 <div class="popup-img2">
                     <span>&times;</span>
-                    <img src="https://edcviit.com/vishwapreneur/assets/img/gallery/pannel1.png"
-                        alt="">
+                    <img src="https://edcviit.com/vishwapreneur/assets/img/gallery/pannel1.png" alt="">
                 </div>
                 <div class="popup-img3">
                     <span>&times;</span>
-                    <img src="https://edcviit.com/vishwapreneur/assets/img/gallery/activity1.png"
-                        alt="">
+                    <img src="https://edcviit.com/vishwapreneur/assets/img/gallery/activity1.png" alt="">
                 </div>
                 <div class="popup-img4">
                     <span>&times;</span>
-                    <img src="https://edcviit.com/vishwapreneur/assets/img/gallery/Saurabh-Jain1.png"
-                        alt="">
+                    <img src="https://edcviit.com/vishwapreneur/assets/img/gallery/Saurabh-Jain1.png" alt="">
                 </div>
                 <div class="popup-img5">
                     <span>&times;</span>
-                    <img src="https://edcviit.com/vishwapreneur/assets/img/gallery/Trending1.png"
-                        alt="">
+                    <img src="https://edcviit.com/vishwapreneur/assets/img/gallery/Trending1.png" alt="">
                 </div>
                 <div class="popup-img6">
                     <span>&times;</span>
-                    <img src="https://edcviit.com/vishwapreneur/assets/img/gallery/tickets1.png"
-                        alt="">
+                    <img src="https://edcviit.com/vishwapreneur/assets/img/gallery/tickets1.png" alt="">
                 </div>
                 <div class="popup-img7">
                     <span>&times;</span>
@@ -626,19 +544,17 @@
             </div>
           </div>
     </div>
-
-
-    <div class="sec-socials">
-        <h1>Social Media</h1>
+    <div id="socials" class="sec-socials">
+        <h1 class="social-text">Social Media</h1>
                <!-- youtube code  -->
                <div class="youtube">
       
                 <div class="youtube1">
-                    <iframe class="iframetag" width="560" height="315" src="https://www.youtube.com/embed/Bj0J4rxZjWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="iframetag" width="444" height="300" src="https://www.youtube.com/embed/Bj0J4rxZjWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                  </div>
         
                  <div class="youtube2">
-                    <iframe class="iframetag" width="560" height="315" src="https://www.youtube.com/embed/4br668Tyfxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="iframetag" width="444" height="300" src="https://www.youtube.com/embed/4br668Tyfxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                  </div>
         
                  
@@ -651,19 +567,19 @@
         
         <div class="socialmedia">
         
-         
             <div class="linkedin1">
-              <iframe class="iframetag" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7004407189981278208" height="345" width="348" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+              <iframe class="iframetag social-card" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7004407189981278208" height="345" width="300" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
              </div>
             
              
            
              <div class="twitter">
-              <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Qatar invested nearly 300 Billion dollars for hosting world cup 2022 to create more than 1.5 million new jobs in key sectors like construction, real estate, benefiting the tourism industry and increasing the foreign investment.<a href="https://twitter.com/hashtag/FIFAWorldCup?src=hash&amp;ref_src=twsrc%5Etfw">#FIFAWorldCup</a><a href="https://twitter.com/hashtag/investments?src=hash&amp;ref_src=twsrc%5Etfw">#investments</a> <a href="https://twitter.com/hashtag/FIFAWorldCupQatar2022?src=hash&amp;ref_src=twsrc%5Etfw">#FIFAWorldCupQatar2022</a></p>&mdash; EDC VIIT (@edcviit) <a href="https://twitter.com/edcviit/status/1604412564284506112?ref_src=twsrc%5Etfw">December 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                
+              <iframe class="t-social-card" id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" style="position: static; visibility: visible; width: 325px; height: 344px; display: block; flex-grow: 1;" title="Twitter Tweet" src="https://platform.twitter.com/embed/Tweet.html?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOlsibGlua3RyLmVlIiwidHIuZWUiLCJ0ZXJyYS5jb20uYnIiLCJ3d3cubGlua3RyLmVlIiwid3d3LnRyLmVlIiwid3d3LnRlcnJhLmNvbS5iciJdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2hvcml6b25fdGltZWxpbmVfMTIwMzQiOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9lZGl0X2JhY2tlbmQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3JlZnNyY19zZXNzaW9uIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2J1c2luZXNzX3ZlcmlmaWVkX2JhZGdlIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19jaGluX3BpbGxzXzE0NzQxIjp7ImJ1Y2tldCI6ImNvbG9yX2ljb25zIiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9yZXN1bHRfbWlncmF0aW9uXzEzOTc5Ijp7ImJ1Y2tldCI6InR3ZWV0X3Jlc3VsdCIsInZlcnNpb24iOm51bGx9LCJ0ZndfbWl4ZWRfbWVkaWFfMTU4OTciOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd19zZW5zaXRpdmVfbWVkaWFfaW50ZXJzdGl0aWFsXzEzOTYzIjp7ImJ1Y2tldCI6ImludGVyc3RpdGlhbCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2R1cGxpY2F0ZV9zY3JpYmVzX3RvX3NldHRpbmdzIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd192aWRlb19obHNfZHluYW1pY19tYW5pZmVzdHNfMTUwODIiOnsiYnVja2V0IjoidHJ1ZV9iaXRyYXRlIiwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2JsdWVfdmVyaWZpZWRfYmFkZ2UiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfZ292X3ZlcmlmaWVkX2JhZGdlIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19zaG93X2J1c2luZXNzX2FmZmlsaWF0ZV9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1604412564284506112&amp;lang=en&amp;origin=http%3A%2F%2F127.0.0.1%3A5501%2Findex.html&amp;sessionId=52b465dde3b291e9eb3c0fc51a440fafaa66862a&amp;theme=light&amp;widgetsVersion=a3525f077c700%3A1667415560940&amp;width=550px" data-tweet-id="1604412564284506112"></iframe>
              </div>
         
              <div class="linkedin2">
-                <iframe class="iframetag" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7004407189981278208" height="348" width="348" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                <iframe class="iframetag social-card" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7004407189981278208" height="348" width="300" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
              </div>
         
            
@@ -678,7 +594,112 @@
         
          </div>
         </div>
-    <div class="sec-footer" id="contact">
+
+        <div id="guidelines" class="sec-guidelines" data-aos="fade-up" data-aos-duration="2000">
+            <h1>EVENT GUIDELINES</h1>
+            <h2>Terms & Conditions</h2>
+            <div class="container">
+                <div class="guidelines">
+                    <ul>
+                        <li>Age Limit</li>
+                        <p>Any person above the age of 13 is allowed to join us for Vishwapreneur'23 </p>
+                        <li>Privacy Policy</li>
+                        <p> By registering for Vishwapreneur'23, you consent to the collection and use of this information
+                            as set forth. </p>
+                        <li>Advertisements & Promotions</li>
+                        <p>This website may contain links to third-party websites, products, or services, which may be
+                            posted by our affiliates, our partners, or our sponsor any kind of promotion regarding them is
+                            not allowed.</p>
+                        <li>Ticket Booking Policy</li>
+                        <p> Once you book a seat for this event, it can not be cancelled under any circumstances and any
+                            request for fare refund will not be entertained.</p>
+                    </ul>
+                </div>
+                <div class="animate">
+                    <!-- <h2>Hello</h2> -->
+                    <ul>
+                        <li>
+                            <p>Following actions are impermissible</p>
+                            <ol>
+                                <li>Use the information in any manner that could interfere with, disable, disrupt,
+                                    overburden, or otherwise impair the Service</li>
+                                <li>Use the website in any manner that we reasonably believe to be an abuse of or fraud on
+                                    any payment system.</li>
+                                <li>Access, search, or collect data about Vishwapreneur by any means (automated or
+                                    otherwise) except as permitted in these Terms or in a separate agreement with EDC VIIT.
+                                </li>
+                                <li>Any political comment will not be tolerated regarding Vishwapreneur.</li>
+                                <li>Legal actions will be taken if any kind of malpractice is found.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sec-faq" id="FAQ">
+            <!-- <div class="box"> -->
+            <!-- <p class="heading">FAQs</p> -->
+            <text class="faq-text">FAQ's</text>
+            <div class="faqs">
+                <div class="questions">
+                    <div class="top" data-aos="fade-right" data-aos-duration="2000">
+                        <div>
+                            <details>
+                                <summary> What is Vishwapreneur?</summary>
+                                <p class="answer">Vishwapreneur is a National Level Entrepreneurial Summit showcasing
+                                    entrepreneurs, creators and innovative minds of our century who had the courage to think
+                                    out
+                                    of the box. Vishwapreneur is a platform for budding entrepreneurs to seek motivation &
+                                    guidance through the experiences of successful business tycoons.</p>
+                            </details>
+                        </div>
+                        <div>
+                            <details>
+                                <summary> Who can participate in the event?</summary>
+                                <p class="answer">Anyone and everyone interested in entrepreneurship and wants to do
+                                    something different from the rest of the people should participate in the event.</p>
+                            </details>
+                        </div>
+    
+                    </div>
+                    <div class="mid" data-aos="fade-left" data-aos-duration="2000">
+                        <div>
+                            <details>
+                                <summary> How to register for the event?</summary>
+                                <p class="answer">You can register through our website www.vishwapreneur.in</p>
+                            </details>
+                        </div>
+                        <div>
+                            <details>
+                                <summary> Can we participate in more than one event?</summary>
+                                <p class="answer">Yes ofcourse.</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="bottom" data-aos="fade-right" data-aos-duration="2000">
+                        <div>
+                            <details>
+                                <summary>What is the duration of the events?</summary>
+                                <p class="answer">The event will be held for 2 days.</p>
+                            </details>
+                        </div>
+                        <div>
+                            <details>
+                                <summary> In what mode will the events be held?</summary>
+                                <p class="answer">The event will be held in offline mode.</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+
+
+    <div id="footer" class="sec-footer" id="contact">
         <footer class="footer">
             <section class="subscribe-section">
                 <h2 class="subscribe-title head2">
@@ -691,9 +712,9 @@
             </section>
             <section class="sitemap-section">
                 <div class="sitemap-links-group links-group-1">
-                    <p class="sitemap-links-heading">
+                    <h3 class="sitemap-links-heading">
                         Quick Links
-                    </p>
+                    </h3>
                     <ul class="sitemap-links">
                         <li class="link-item">
                             <a class="links" href="">Our Team</a>
@@ -711,9 +732,9 @@
                     </ul>
                 </div>
                 <div class="sitemap-links-group links-group-2">
-                    <p class="sitemap-links-heading">
+                    <h3 class="sitemap-links-heading">
                         Other Links
-                    </p>
+                    </h3>
                     <ul class="sitemap-links">
                         <li class="link-item">
                             <a class="links" href="">EDC VIIT</a>
@@ -734,49 +755,49 @@
                     </ul>
                 </div>
                 <div class="sitemap-links-group links-group-3">
-                    <p class="sitemap-links-heading">
+                    <h3 class="sitemap-links-heading">
                         Follow us on
-                        </h5>
-                        <ul class="sitemap-links">
-                            <li class="link-item">
+                        </h3>
+                    <ul class="sitemap-links">
+                        <li class="link-item">
 
-                                <a href="" class="social-link">
-                                    <i class="lni lni-twitter-filled"></i>
-                                </a>
-                                <a href="" class="social-link">
-                                    <i class="lni lni-linkedin-original"></i>
-                                </a>
+                            <a href="" class="social-link">
+                                <i class="lni lni-twitter-filled"></i>
+                            </a>
+                            <a href="" class="social-link">
+                                <i class="lni lni-linkedin-original"></i>
+                            </a>
 
-                                <a href="" class="social-link">
-                                    <i class="lni lni-instagram-original"></i>
-                                </a>
+                            <a href="" class="social-link">
+                                <i class="lni lni-instagram-original"></i>
+                            </a>
 
-                                <a href="" class="social-link">
-                                    <i class="lni lni-facebook-original"></i>
-                                </a>
-                            </li>
+                            <a href="" class="social-link">
+                                <i class="lni lni-facebook-original"></i>
+                            </a>
+                        </li>
 
-                            <li class="link-item">
-                                <p class="sitemap-links-heading">Contact Us</p>
+                        <li class="link-item">
+                            <h3 class="sitemap-links-heading">Contact Us</h3>
 
-                            </li>
-                            <li class="link-item">
-                                <div class="ltext">Email-
+                        </li>
+                        <li class="link-item">
+                            <div class="ltext">Email-
                                 <a class="links" href="mailto:contact@vishwapreneur.in">contact@vishwapreneur.in</a>
-                            </div>    
-                            </li>
-                            <li class="link-item">
-                                <div class="ltext">
+                            </div>
+                        </li>
+                        <li class="link-item">
+                            <div class="ltext">
                                 Phone-
                                 <a class="links" href="tel:+91">1234</a>
                             </div>
-                            </li>
-                            <li class="link-item">
-                                <div class="ltext">
+                        </li>
+                        <li class="link-item">
+                            <div class="ltext">
                                 EDC HQ, VIIT Campus, Kondhwa, Pune-48
                             </div>
-                            </li>
-                        </ul>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <!-- <section class="company-section">
@@ -819,114 +840,114 @@
         });
     </script>
 
-    
+
     <!-- gallery script -->
     <script>
 
-        if (window.inner-width > 560){
-        // 1
-        document.querySelectorAll('.item1').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-img').style.display = 'block';
+        if (window.inner - width > 560) {
+            // 1
+            document.querySelectorAll('.item1').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-img').style.display = 'block';
+                }
+            });
+
+            document.querySelector('.popup-img').onclick = () => {
+                document.querySelector('.popup-img').style.display = 'none';
             }
-        });
+            // 2
+            document.querySelectorAll('.item2').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-img2').style.display = 'block';
+                }
+            });
 
-        document.querySelector('.popup-img').onclick = () => {
-            document.querySelector('.popup-img').style.display = 'none';
-        }
-        // 2
-        document.querySelectorAll('.item2').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-img2').style.display = 'block';
+            document.querySelector('.popup-img2').onclick = () => {
+                document.querySelector('.popup-img2').style.display = 'none';
             }
-        });
 
-        document.querySelector('.popup-img2').onclick = () => {
-            document.querySelector('.popup-img2').style.display = 'none';
-        }
+            //3
+            document.querySelectorAll('.item3').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-img3').style.display = 'block';
+                }
+            });
 
-        //3
-        document.querySelectorAll('.item3').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-img3').style.display = 'block';
+            document.querySelector('.popup-img3').onclick = () => {
+                document.querySelector('.popup-img3').style.display = 'none';
             }
-        });
+            // 4
+            document.querySelectorAll('.item4').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-img4').style.display = 'block';
+                }
+            });
 
-        document.querySelector('.popup-img3').onclick = () => {
-            document.querySelector('.popup-img3').style.display = 'none';
-        }
-        // 4
-        document.querySelectorAll('.item4').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-img4').style.display = 'block';
+            document.querySelector('.popup-img4').onclick = () => {
+                document.querySelector('.popup-img4').style.display = 'none';
             }
-        });
+            //5
+            document.querySelectorAll('.item5').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-img5').style.display = 'block';
+                }
+            });
 
-        document.querySelector('.popup-img4').onclick = () => {
-            document.querySelector('.popup-img4').style.display = 'none';
-        }
-        //5
-        document.querySelectorAll('.item5').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-img5').style.display = 'block';
+            document.querySelector('.popup-img5').onclick = () => {
+                document.querySelector('.popup-img5').style.display = 'none';
             }
-        });
+            //6
+            document.querySelectorAll('.item6').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-img6').style.display = 'block';
+                }
+            });
 
-        document.querySelector('.popup-img5').onclick = () => {
-            document.querySelector('.popup-img5').style.display = 'none';
-        }
-        //6
-        document.querySelectorAll('.item6').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-img6').style.display = 'block';
+            document.querySelector('.popup-img6').onclick = () => {
+                document.querySelector('.popup-img6').style.display = 'none';
             }
-        });
+            //7
+            document.querySelectorAll('.item7').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-img7').style.display = 'block';
+                }
+            });
 
-        document.querySelector('.popup-img6').onclick = () => {
-            document.querySelector('.popup-img6').style.display = 'none';
-        }
-        //7
-        document.querySelectorAll('.item7').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-img7').style.display = 'block';
+            document.querySelector('.popup-img7').onclick = () => {
+                document.querySelector('.popup-img7').style.display = 'none';
             }
-        });
+            //8
+            document.querySelectorAll('.item8').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-img8').style.display = 'block';
+                }
+            });
 
-        document.querySelector('.popup-img7').onclick = () => {
-            document.querySelector('.popup-img7').style.display = 'none';
-        }
-        //8
-        document.querySelectorAll('.item8').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-img8').style.display = 'block';
+            document.querySelector('.popup-img8').onclick = () => {
+                document.querySelector('.popup-img8').style.display = 'none';
             }
-        });
+            //9
+            document.querySelectorAll('.item9').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-img9').style.display = 'block';
+                }
+            });
 
-        document.querySelector('.popup-img8').onclick = () => {
-            document.querySelector('.popup-img8').style.display = 'none';
-        }
-        //9
-        document.querySelectorAll('.item9').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-img9').style.display = 'block';
+            document.querySelector('.popup-img9').onclick = () => {
+                document.querySelector('.popup-img9').style.display = 'none';
             }
-        });
+            //10
+            document.querySelectorAll('.item10').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-img10').style.display = 'block';
+                }
+            });
 
-        document.querySelector('.popup-img9').onclick = () => {
-            document.querySelector('.popup-img9').style.display = 'none';
-        }
-        //10
-        document.querySelectorAll('.item10').forEach(image => {
-            image.onclick = () => {
-                document.querySelector('.popup-img10').style.display = 'block';
+            document.querySelector('.popup-img10').onclick = () => {
+                document.querySelector('.popup-img10').style.display = 'none';
             }
-        });
 
-        document.querySelector('.popup-img10').onclick = () => {
-            document.querySelector('.popup-img10').style.display = 'none';
         }
-
-    }
             //document.getElementsByClassName('.popup-img').src="gallery\images\photo-1476097297040-79e9e1603142.avif";
             //document.getElementsByClassName('.popup').
     </script>
@@ -937,6 +958,35 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- loader sanwara script -->
+    <!-- <script>
+        var loader = document.getElementById("loader");
+
+        window.addEventListener("load", function(){
+            loader.style.height = "200rem";
+            loader.style.width = "200rem";
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "hidden";
+        })
+    </script> -->
+
+    <!-- loader -->
+    <script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+              "body").style.visibility = "hidden";
+            document.querySelector(
+              "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+              "#loader").style.display = "none";
+            document.querySelector(
+              "body").style.visibility = "visible";
+        }
+    };
+</script>
 </body>
 
 </html>

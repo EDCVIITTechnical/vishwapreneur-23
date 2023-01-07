@@ -5,6 +5,10 @@ body {
     rgb(26, 1, 46) 99.4%
   );
 }
+html{
+  scroll-behavior: smooth;
+  transition-duration: 5s ;
+}
 
 #testimonial_area {
   padding: 10% 0;
@@ -48,13 +52,16 @@ body {
 .box-area span {
   color: #ffab0f;
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   margin: 0 0 10px;
   font-weight: 400;
 }
 
 .box-area .content {
   color: silver;
+  font-weight: 300;
+  font-size: 13px;
+  
 }
 
 .box-area .img-area {
@@ -120,11 +127,11 @@ padding: : 500px;
   top: -30px;
 }
 
-@media only screen and (max-width: 991px) {
+/* @media only screen and (max-width: 991px) {
   .owl-nav {
     display: none;
   }
-}
+} */
 
 @media only screen and (max-width: 767px) {
   .box-area {
@@ -139,6 +146,7 @@ padding: : 500px;
 .guest {
   margin-right: 10vw;
   background: rgba(0, 0, 0, 0);
+  font-family: 'Poppins',sans-serif;
 }
 
 .text {
@@ -163,6 +171,7 @@ padding: : 500px;
 }
 
 @media only screen and (max-width: 767px) {
+  
   .box-area {
     text-align: center;
   }

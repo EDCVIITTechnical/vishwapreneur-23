@@ -101,7 +101,7 @@ body {
 }
 
 .sitemap-links-group {
-  margin-right: 40px;
+  margin-right: 38px;
 }
 
 .sitemap-links {
@@ -112,8 +112,8 @@ body {
 .sitemap-links-heading {
   font-family: "Montserrat", sans-serif;
   color: rgb(255, 171, 15);
-  font-size: 1.4rem;
-  font-style: normal;
+  /* font-size: 1.4rem; */
+  /* font-style: normal; */
 }
 
 .sitemap-links > .link-item {
@@ -152,6 +152,7 @@ body {
 .head2 {
   text-align: left;
   font-size: 30px;
+  font-family: 'BatmanForeverAlternate';
 }
 
 @media only screen and (max-width: 630px) {
@@ -159,7 +160,7 @@ body {
     display: block;
   }
   .subscribe-section {
-    margin: 10px;
+    margin: 0 10px;
   }
   .sitemap-section {
     justify-content: center;
@@ -171,16 +172,21 @@ body {
   font-size: 1.4rem;
   font-style:normal;
 } */
-a {
+/* a {
   font-size: 1.2rem;
-}
-.ltext {
+} */
+/* .ltext {
   font-size: 1.2rem;
-}
+} */
 @media only screen and (max-width: 480px) {
   .sitemap-section {
     /* justify-content: center; */
-    margin-left: 70px;
+    margin-left: 10vw;
+  }
+  .sitemap-links-group{
+    margin-right: 0;
+    margin-left: 3vw;
+
   }
   /* .head2{
       text-align: center; 
@@ -200,10 +206,10 @@ a {
     font-style: normal;
   }
   a {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
   .ltext {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 
   .sec-footer {
