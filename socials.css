@@ -93,7 +93,7 @@
   .sec-socials {
     padding-bottom: 3rem;
     align-items: center;
-    margin-top: -22vh;
+    margin-top: -2vh;
   }
 
   .sec-socials .youtube {
@@ -141,7 +141,8 @@
 
   .linkedin2 {
     padding-bottom: 2rem;
-    margin-left: 15vw;
+    margin-left: 5vw;
+    width: 20%;
   }
 
   .twitter {
