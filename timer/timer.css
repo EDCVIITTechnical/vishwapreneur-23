@@ -119,16 +119,18 @@
     grid-template-columns: 12fr;
     grid-row-gap: 5rem;
     grid-gap: 5rem;
+    margin-left: -10rem;
   }
 
   .timer-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     justify-content: center;
-    padding-left: 1.5rem;
+    /* padding-left: -2rem; */
+    margin-left: 4rem;
   }
 
   .timer {
-    width: 40rem;
+    width: 20rem;
     height: 120vh;
     justify-content: center;
   }

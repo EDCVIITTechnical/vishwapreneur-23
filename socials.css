@@ -51,7 +51,7 @@
     padding-bottom: .5rem;
     font-weight: 10px;
     padding-top: 3vh;
-    font-size: 70px;
+    /* font-size: 70px; */
     font-family: 'Montserrat', sans-serif;
 }
 .linkedin2 {
@@ -83,11 +83,12 @@
 } */
 
 @media only screen and (max-width: 723px) {
-  h1 {
+  .sec-socials h1 {
     /* padding-top: 3rem; */
-    padding-bottom: 3rem;
-    padding-left: 2rem;
-    margin-left: 3vw;
+    /* padding-bottom: 1.5rem; */
+    padding-left: 1.2rem;
+    /* margin-left: 3vw; */
+    font-size:2.5rem;
   }
 
   .sec-socials {
@@ -125,7 +126,7 @@
   .linkedin1 .iframetag {
     width: 300px;
     padding-right: 5rem;
-    margin-left: -5vw;
+    margin-left: 0rem;
     margin-top: -5vh;
     border-radius: 0;
     padding-bottom: 1rem;
@@ -150,7 +151,7 @@
   }
   .linkedin2 .iframetag {
     width: 300px;
-    padding-right: 5rem;
+    padding-right: 0rem;
     margin-left: -3vw;
     border-radius: 0;
   }

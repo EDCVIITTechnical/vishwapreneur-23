@@ -66,6 +66,7 @@
 @media screen and (max-width: 737px) {
   .parallax{
     padding-top: 90px;
+    height:930px;
   }
 
   .about img {
@@ -74,5 +75,9 @@
 
   .about-cnt h2 {
     font-size: 1.5rem;
+  }
+
+  .about-cnt {
+    padding-right: 4rem;
   }
 }

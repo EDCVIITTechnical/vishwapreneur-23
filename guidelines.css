@@ -104,14 +104,16 @@ h2 {
     }
 
     .sec-guidelines .container {
-        height: 165vh;
+        height: 80rem;
         width: 100%;
         flex-direction: column;
-        margin-top: -8vh;
+        margin-top: -8rem;
     }
     .guidelines {
-        padding-bottom: 9rem;
-        width: 95%;
+        /* padding-top: 4rem; */
+        padding-bottom: 16rem;
+        width: 59%;
+        border: none;
     }
 
     .guidelines li {
@@ -120,6 +122,9 @@ h2 {
 
     .animate {
         padding-bottom: 1rem;
-        width: 95%;
+        width: 59%;
 }
+    .sec-guidelines .container .animate p{
+        margin-bottom: .6rem;
+    }
 }
