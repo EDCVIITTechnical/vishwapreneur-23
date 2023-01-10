@@ -187,4 +187,12 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+  
+    .dots {
+    padding-top: 1rem;
+  }
+  .dots label {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
 }
