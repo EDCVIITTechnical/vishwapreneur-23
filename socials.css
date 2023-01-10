@@ -23,8 +23,14 @@
   padding-bottom: 25rem;
 }
 
-.iframetag {
+.youtube1 .iframetag, .youtube2 .iframetag {
   border-radius: 10px;
+  border: 3px solid rgb(255, 171, 15);
+}
+
+.twitter .iframetag, .linkedin1 .iframetag, .linkedin2 .iframetag {
+  border-radius: 10px;
+  border: 5px solid rgb(255, 171, 15);
 }
 
 .socialmedia {
@@ -192,8 +198,13 @@
     
     border-radius: 20px;
   }
+}
 
-
+@media (min-width:1080px) {
+  .sec-socials .youtube .youtube2{
+    padding-left: 0;
+    margin-left: 39.5rem;
+  }
 }
 
 

@@ -195,3 +195,10 @@ padding: : 500px;
     margin-left: 19vw;
   }
 }
+
+
+@media (min-width: 1300px){
+  .guest .container .row{
+    margin-right: 3.6rem;
+  }
+}
