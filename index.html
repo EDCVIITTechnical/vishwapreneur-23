@@ -62,7 +62,7 @@
           alt=""
           style="height: 50px; padding-top: 5px; left: 0; display: fixed"
       /></a>
-      <ul class="nv-grid-list nv-ul">
+      <ul class="nv-grid-list nv-ul" id="menu">
         <li><a class="nv-line nv-li" href="#home">Home</a></li>
         <li><a class="nv-line nv-li" href="#home">Schedule</a></li>
         <li><a class="nv-line nv-li" href="#Guests">Guests</a></li>
@@ -1313,5 +1313,20 @@
         }
       };
     </script>
+    
+    <!--Hamburger hide tag ---> 
+<script>
+    var menu = document.getElementById('menu');
+    var closeMenu = document.getElementById('check');
+
+    menu.addEventListener('click', handleMenuClick);
+
+    function handleMenuClick(event) {
+        if (event.target instanceof HTMLAnchorElement){
+            closeMenu.checked = false;
+        }
+    }
+</script>
+
   </body>
 </html>
