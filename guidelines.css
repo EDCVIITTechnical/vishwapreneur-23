@@ -114,6 +114,8 @@ h2 {
         padding-bottom: 12rem;
         width: 75%;
         border: none;
+        padding-right: 1rem;
+        margin-left: -3.3rem;
     }
 
     .guidelines li {
@@ -123,7 +125,8 @@ h2 {
     .animate {
         padding-bottom: 1rem;
         width: 75%;
-        padding-left: 5rem;
+        padding-right: 1rem;
+        margin-left: -3.3rem;
 }
     .sec-guidelines .container .animate p{
         margin-bottom: .6rem;

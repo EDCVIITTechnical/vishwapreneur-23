@@ -26,7 +26,7 @@
 }
 
 .contact-container .cont2{
-    padding-right: 5rem;
+    padding-right: 3rem;
     height:15rem;
     width: 15rem;
     text-align: center;
@@ -35,7 +35,7 @@
 }
 
 .contact-container .cont3{
-    padding-right: 5rem;
+    padding-right: 3rem;
     height: 15rem;
     width: 15rem;
     text-align: center;
@@ -44,7 +44,7 @@
 }
 
 .contact-container .cont4{
-    padding-right: 5rem;
+    padding-right: 3rem;
     height: 15rem;
     width: 15rem;
     text-align: center;
@@ -124,6 +124,10 @@
         margin-bottom: 6rem;
     }
 
+    .sec-contactus h1 {
+        font-size: 3rem;
+    }
+
     .contact-container {
         flex-direction: column;
         padding-left: 5rem;
@@ -131,6 +135,7 @@
 
     .cont1 {
         padding-bottom: 3rem;
+        /* margin-left: -0.8rem; */
     }
 
     .cont1 p {
@@ -139,11 +144,12 @@
 
     .cont2 {
         padding-bottom: 3rem;
-        margin-left: -1rem;
+        margin-left: -0.8rem;
     }
 
     .cont2 p {
         margin-top: 0.2rem;
+        /* padding-left: 0.5rem */
     }
 
     .cont3 {
@@ -156,12 +162,23 @@
     }
 
     .cont4 {
-        padding-bottom: 3rem;
+        padding-bottom: 0rem;
         margin-left: -1rem;
     }
 
     .cont4 p {
         margin-top: -.7rem;
         /* padding-top: 1.5rem; */
+    }
+}
+
+@media (min-width: 1417px){
+    .cont4 h3 {
+        font-size: 1.3rem;
+        padding-bottom: 5px;
+    }
+
+    .contact-container {
+        padding-left: 11rem;
     }
 }
