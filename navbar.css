@@ -107,9 +107,9 @@ li{
   }
 
   /* mobile media query */
-@media (max-width: 858px){
+@media (min-width:360px) and (max-width: 858px){
   .nav{
-    width: 23.6rem;
+    width: 24.6rem;
     justify-content: flex-start;
   }
     .nv-checkbtn{
