@@ -124,31 +124,39 @@
                 <text class="vish" fill="#fff" x="200" y="200">VISHWAPRENEUR'23</text>
                 <text class="tagline" fill="#ffab0f" x="330" y="250">Rise to the Zenith!</text>
                 
+                      <!-- <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" ></polyline> -->
                 
-                <!-- <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" ></polyline> -->
-                
-                <g mask="url(#m)">
-                    <rect fill="black" width="100%" height="100%"></rect>
-                    <!-- <text x="350" y="550" fill="white">FURTHER</text> -->
-                    <text x="400" y="650" fill="white" style="font-size:40px">Register Now</text>
-                    <foreignObject x="500" y="650" width="160" height="160">
-                        <button class="btn btn2" href="#home">Register</button>
-                    </foreignObject>
-                    <!-- <line x1="0" y1="800" x2="100%" y2="800" style="stroke:#ffab0f;stroke-width:5" /> -->
-                </g>
-                
-                <!-- <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"></rect> -->
-            </svg>
-            <div class="about" style="display: flex;">
-<!--                 <img src="img/vp-logo.png" style="height: 370px;" alt=""> -->
-                <div class="about-cnt">
-                    <h2>About Vishwapreneur</h2>
-                    <p>Vishwapreneur is a National Level Entrepreneurial Summit showcasing entrepreneurs, creators and innovative minds of our century who had the courage to think out of the box. Vishwapreneur is a platform for budding entrepreneurs to seek motivation & guidance through the experiences of successful business tycoons.
-                    </p>
+                      <g mask="url(#m)">
+                        <rect fill="black" width="100%" height="100%"></rect>
+                        <!-- <text x="350" y="550" fill="white">FURTHER</text> -->
+                        <text x="400" y="650" fill="white" style="font-size:40px" id="PCRegTitle" style="display: initial;">Register Now</text>
+                        
+                        <foreignObject x="500" y="650" width="160" height="160">
+                            <button class="btn btn2" href="#home" id="PCBtn" style="display: initial;">Register</button>
+                        </foreignObject>
+                        <!-- <line x1="0" y1="800" x2="100%" y2="800" style="stroke:#ffab0f;stroke-width:5" /> -->
+                    </g>
+                    
+                    <!-- <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"></rect> -->
+                </svg>
+                <div class="about" style="display: flex;">
+    
+    <!--                 <img src="img/vp-logo.png" style="height: 370px;" alt=""> -->
+                    <div class="about-cnt">
+                        <h2>About Vishwapreneur</h2>
+                        <p>Vishwapreneur is a National Level Entrepreneurial Summit showcasing entrepreneurs, creators and innovative minds of our century who had the courage to think out of the box. Vishwapreneur is a platform for budding entrepreneurs to seek motivation & guidance through the experiences of successful business tycoons.
+                        </p>
+                    </div>
+    
+                    <foreignObject x="500" y="650" width="120" height="120" id="phoneButton">
+                      <!-- <text x="400" y="650" fill="white" style="font-size:15px" id="phoneReg">Register Now</text> -->
+                      <!-- <h2 id="phoneButtonTitle">Register Now</h2> -->
+                      <button class="btn btn2" id="phoneBtn" href="#home">Register</button>
+                  </foreignObject>
                 </div>
             </div>
         </div>
-    </div>
+    
 
     <div id="timer" class="f-timer" data-aos="fade-up" data-aos-duration="2000">
       <div class="timer">
