@@ -109,7 +109,7 @@ li{
   /* mobile media query */
 @media (min-width:360px) and (max-width: 858px){
   .nav{
-    width: 24.6rem;
+    width: 100%;
     justify-content: flex-start;
   }
     .nv-checkbtn{
