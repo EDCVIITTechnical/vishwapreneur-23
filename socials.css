@@ -251,3 +251,19 @@
     height: 22rem;
   }
 }
+
+@media (min-width:1080px)and (max-width: 1200px) {
+  .socialmedia .tweet {
+    height: 24rem;
+}
+}
+@media (min-width:1200px)and (max-width: 1370px) {
+  .socialmedia .tweet {
+    height: 22rem;
+}
+}
+@media (min-width:1370px)and (max-width: 1509px) {
+  .socialmedia .tweet {
+    height: 21rem;
+}
+}
