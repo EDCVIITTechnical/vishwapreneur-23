@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 350px;
+  min-height: 360px;
   perspective: 1000px;
   overflow: hidden;
 }
@@ -180,6 +180,9 @@
     height: 120px;
     margin-top: -8vh;
   }
+  .testimonials .item-reviews .nik{
+    margin-top: -3vh;
+  }
 
   .testimonials .item-reviews p {
     padding-left: 125px;
@@ -194,5 +197,24 @@
   .dots label {
     height: 0.5rem;
     width: 0.5rem;
+  }
+  .item-reviews{
+    box-shadow: none;
+  }
+  .testimonials{
+  border-radius: 2rem;
+    box-shadow: 0px 5px rgba(255, 171, 15, 1);
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .testimonials .item-reviews .h2{
+    padding: 0 2.5%;
+  }
+  .testimonials{
+    min-height: 370px;
+  }
+  .testimonials .item-reviews .gaurav, .testimonials .item-reviews .rash{
+    margin-top: -5vh;
   }
 }
