@@ -80,33 +80,7 @@ h1 {
   counter-increment: item-counter;
   /* opacity:1.5; */
 }
-.item:nth-of-type(1) {
-  background-image: url("https://edcviit.com/vishwapreneur/assets/img/gallery/Prajakta-koli.png");
-}
-.item:nth-of-type(2) {
-  background-image: url("https://edcviit.com/vishwapreneur/assets/img/gallery/pannel1.png");
-}
-.item:nth-of-type(3) {
-  background-image: url("https://edcviit.com/vishwapreneur/assets/img/gallery/activity1.png");
-}
-.item:nth-of-type(4) {
-  background-image: url("https://edcviit.com/vishwapreneur/assets/img/gallery/Saurabh-Jain1.png");
-}
-.item:nth-of-type(5) {
-  background-image: url("https://edcviit.com/vishwapreneur/assets/img/gallery/Trending1.png");
-}
-.item:nth-of-type(6) {
-  background-image: url("https://edcviit.com/vishwapreneur/assets/img/gallery/tickets1.png");
-}
-.item:nth-of-type(8) {
-  background-image: url("/img/s1.png");
-}
-/* .item:nth-of-type(9) {
-  background-image: url("https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
-} */
-.item:nth-of-type(7) {
-  background-image: url("/img/s2.png");
-}
+
 /* .item:nth-of-type(10) {
   background-image: url("https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=");
 } */
@@ -630,20 +604,117 @@ h1 {
   }
 }
 
-.item7{
-  display:none;
+.item7 {
+  display: none;
 }
-.item8{
-  display:none;
+.item8 {
+  display: none;
 }
-@media (min-width: 1417px){
-  .item--large1{
+@media (min-width: 1417px) {
+  .item--large1 {
     grid-row-end: span 2;
   }
-  .item7{
-    display:block;
+  .item7 {
+    display: block;
   }
-  .item8{
-    display:block;
+  .item8 {
+    display: block;
+  }
+}
+
+/* for mobile */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+.m-container {
+  margin: 0 auto;
+  width: 90%;
+  height: 20rem;
+  position: relative;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  height: 100%;
+}
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#next-btn,
+#prev-btn {
+  cursor: pointer;
+  background: transparent;
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+  color: white;
+}
+#next-btn:focus,
+#prev-btn:focus {
+  outline: none;
+}
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  font-size: 60px;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .container-gallery{
+    display: none;
+  }
+}
+
+@media (min-width: 480px) {
+  .m-container {
+    display: none;
+  }
+  .item:nth-of-type(1) {
+    background-image: url("/gallery/3.jpg");
+  }
+  .item:nth-of-type(2) {
+    background-image: url("/gallery/1.jpg");
+  }
+  .item:nth-of-type(3) {
+    background-image: url("/gallery/6.jpg");
+  }
+  .item:nth-of-type(4) {
+    background-image: url("/gallery/7.jpg");
+  }
+  .item:nth-of-type(5) {
+    background-image: url("/gallery/81.jpg");
+  }
+  .item:nth-of-type(6) {
+    background-image: url("https://edcviit.com/vishwapreneur/assets/img/gallery/tickets1.png");
+  }
+  .item:nth-of-type(8) {
+    background-image: url("/gallery/4.jpg");
+  }
+  /* .item:nth-of-type(9) {
+    background-image: url("https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+  } */
+  .item:nth-of-type(7) {
+    background-image: url("/gallery/5.jpg");
   }
 }

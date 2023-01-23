@@ -1,6 +1,4 @@
-
-
- .btn{
+.btn {
   z-index: 100;
   border: 1px solid rgb(255, 171, 15);
   background: none;
@@ -13,19 +11,23 @@
   position: relative;
   overflow: hidden;
 }
-.btn1,.btn2{
+.btn1,
+.btn2 {
   color: rgb(255, 171, 15);
 }
-.btn3,.btn4{
+.btn3,
+.btn4 {
   color: #fff;
 }
-.btn1:hover,.btn2:hover{
+.btn1:hover,
+.btn2:hover {
   color: #fff;
 }
-.btn3:hover,.btn4:hover{
+.btn3:hover,
+.btn4:hover {
   color: #3498db;
 }
-.btn::before{
+.btn::before {
   content: "";
   position: absolute;
   left: 0;
@@ -35,21 +37,26 @@
   z-index: -1;
   transition: 0.8s;
 }
-.btn1::before,.btn3::before{
+.btn1::before,
+.btn3::before {
   top: 0;
   border-radius: 0 0 50% 50%;
 }
-.btn2::before,.btn4::before{
+.btn2::before,
+.btn4::before {
   bottom: 0;
   border-radius: 50% 50% 0 0;
 }
-.btn3::before,.btn4::before{
+.btn3::before,
+.btn4::before {
   height: 180%;
 }
-.btn1:hover::before,.btn2:hover::before{
+.btn1:hover::before,
+.btn2:hover::before {
   height: 180%;
 }
-.btn3:hover::before,.btn4:hover::before{
+.btn3:hover::before,
+.btn4:hover::before {
   height: 0%;
 }
 
@@ -68,7 +75,14 @@
   display: none;
 }
 
-@media only screen and (max-width: 763px){
+.btn2 {
+  display: none;
+}
+
+@media only screen and (max-width: 763px) {
+  .btn2{
+    display: initial;
+  }
   .about {
     flex-direction: column;
   }
