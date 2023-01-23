@@ -115,7 +115,7 @@ details summary {
 
   .sec-faq {
     margin-left: -22vw;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
     padding-bottom: 1.5rem;
   }
 
@@ -133,6 +133,14 @@ details summary {
 
   details summary {
     font-size: 0.8rem;
-    width: 21rem;
+    width: 20rem;
   }
+
+  #timer {
+    display: none;
+  }
+
+  /* #phone_timers {
+    display: none;
+  } */
 }

@@ -30,6 +30,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css"
     />
+     <!-- automatic slider  -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="guests.css" />
     <!-- gallery -->
     <link rel="stylesheet" href="gallery2.css" />
@@ -48,6 +50,9 @@
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- phone_timer -->
+    <link rel="stylesheet" href="phone_timer.css">
+
     <!-- footer -->
     <link rel="stylesheet" href="footer.css" />
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
@@ -59,7 +64,7 @@
       </label>
       <a href=""
         ><img
-          src="img/vp-logo.png"
+          src="favicon_nav.png"
           alt=""
           style="height: 50px; padding-top: 5px; left: 0; display: fixed"
       /></a>
@@ -133,7 +138,8 @@
                         <text x="400" y="650" fill="white" style="font-size:40px" id="PCRegTitle" style="display: initial;">Register Now</text>
                         
                         <foreignObject x="500" y="650" width="160" height="160">
-                            <button class="btn btn2" href="#home" id="PCBtn" style="display: initial;">Register</button>
+                            <!-- <button class="btn btn2" href="#home" id="PCBtn" style="display: initial;">Register</button> -->
+                            <button class="btn btn2" id="PCBtn" style="display: initial;" onclick="location.href = 'https://register.vishwapreneur.in/';">Register</button>
                         </foreignObject>
                         <!-- <line x1="0" y1="800" x2="100%" y2="800" style="stroke:#ffab0f;stroke-width:5" /> -->
                     </g>
@@ -142,7 +148,7 @@
                 </svg>
                 <div class="about" style="display: flex;">
     
-    <!--                 <img src="img/vp-logo.png" style="height: 370px;" alt=""> -->
+                    <img src="favicon.png" style="height: 370px;" alt="">
                     <div class="about-cnt">
                         <h2>About Vishwapreneur</h2>
                         <p>Vishwapreneur is a National Level Entrepreneurial Summit showcasing entrepreneurs, creators and innovative minds of our century who had the courage to think out of the box. Vishwapreneur is a platform for budding entrepreneurs to seek motivation & guidance through the experiences of successful business tycoons.
@@ -152,12 +158,41 @@
                     <foreignObject x="500" y="650" width="120" height="120" id="phoneButton">
                       <!-- <text x="400" y="650" fill="white" style="font-size:15px" id="phoneReg">Register Now</text> -->
                       <!-- <h2 id="phoneButtonTitle">Register Now</h2> -->
-                      <button class="btn btn2" id="phoneBtn" href="#home">Register</button>
+                      <a class="btn btn2" id="phoneBtn" href="https://register.vishwapreneur.in/">Register</a>
                   </foreignObject>
                 </div>
             </div>
         </div>
-    
+        
+        <!-- phone's timer -->
+        <div class="container_for_timer" id="phone_timers">
+          <h1 id="headline">Event Starts In!</h1>
+          <div id="countdown" class="countdown_1">
+            <ul>
+              <div class="top2">
+                  <div class="days_1">
+                      <li><span id="days"></span>Days</li>
+                  </div>
+  
+                  <div class="hours_1">
+                      <li><span id="hours"></span>Hours</li>
+                  </div>
+              </div>
+  
+              <div class="bottom2">
+                  <div class="min_1">
+                      <li><span id="minutes"></span>Minutes</li>
+                  </div>
+  
+                  <div class="sec_1">
+                      <li><span id="seconds"></span>Seconds</li>
+                  </div>
+              </div>
+  
+            </ul>
+          </div>
+        </div>
+        
 
     <div id="timer" class="f-timer" data-aos="fade-up" data-aos-duration="2000">
       <div class="timer">
@@ -1028,30 +1063,40 @@
       <h1>Contact Us</h1>
       <div class="contact-container">
           <div class="cont1">
+            <a class="links" href="mailto:contact@vishwapreneur.in">
               <img src="query.png">
-              <h3>Queries</h3>
+              <h3><a class="links" href="mailto:contact@vishwapreneur.in">Queries</a></h3>
               <!-- <p>Email - <a class="links" href="mailto:"> </a> -->
                   <p>Email: <a class="links" href="mailto:contact@vishwapreneur.in">contact@vishwapreneur.in</a></p>
+                </a>
           </div>
           <div class="cont2">
+            <a class="links" href="mailto:edcflm.sponsorship@gmail.com">
               <img src="sponsor-icon.png">
-              <h3>
+              <h3><a class="links" href="mailto:edcflm.sponsorship@gmail.com">
                   Sponsorship Opportunities
+                </a>
               </h3>
               <p>Email: <a class="links" href="mailto:edcflm.sponsorship@gmail.com">edcflm.sponsorship@gmail.com</a></p>
+            </a>
           </div>
           <div class="cont3">
+            <a class="links" href="mailto:pr@vishwapreneur.in">
               <img src="collaborations.png">
-              <h3>Collaboration Opportunities</h3>
+              <h3><a class="links" href="mailto:pr@vishwapreneur.in">Collaboration Opportunities</a></h3>
               <p>Email: <br><a class="links" href="mailto:pr@vishwapreneur.in">pr@vishwapreneur.in</a></p>
+            </a>
           </div>
           <div class="cont4">
+            <a class="links" href="mailto:curator@vishwapreneur.in">
               <img src="orator.png">
-              <h3>Speaking Opportunities</h3>
+              <h3><a class="links" href="mailto:curator@vishwapreneur.in">Speaking Opportunities</a></h3>
               <p>Email: <a class="links" href="mailto:curator@vishwapreneur.in">curator@vishwapreneur.in</a></p>
+            </a>
           </div>
       </div>
   </div>
+  
     <div id="footer" class="sec-footer" id="contact">
       <footer class="footer">
         <section class="subscribe-section">
@@ -1348,7 +1393,10 @@
     if (i > 5) {
       i = 1;
     }
-  },9999);
+  },5000);
 </script>
+
+<!-- phone timer script -->
+<script src="timerphone.js"></script>
   </body>
 </html>

@@ -187,7 +187,7 @@ padding: : 500px;
 
   .row {
     padding-left: 0rem;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
     padding-bottom: 4rem;
   }
 

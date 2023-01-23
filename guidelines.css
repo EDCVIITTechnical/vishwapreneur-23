@@ -97,6 +97,7 @@ h2 {
 @media only screen and (max-width: 723px) {
     .sec-guidelines h1 {
         font-size: 1.6rem;
+        padding-bottom: 2rem;
     }
     .sec-guidelines h2 {
         font-size: 1.2rem;
@@ -104,18 +105,19 @@ h2 {
     }
 
     .sec-guidelines .container {
-        height: 82rem;
+        height: 64rem;
         width: 100%;
         flex-direction: column;
-        margin-top: -8rem;
+        margin-top: -3rem;
     }
     .guidelines {
         /* padding-top: 4rem; */
-        padding-bottom: 12rem;
+        padding-bottom: 7rem;
         width: 75%;
         border: none;
         padding-right: 1rem;
-        margin-left: -3.3rem;
+        margin-left: -5.3rem;
+        text-align: left;
     }
 
     .guidelines li {
@@ -123,12 +125,15 @@ h2 {
     }
 
     .animate {
-        padding-bottom: 1rem;
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
         width: 75%;
         padding-right: 1rem;
-        margin-left: -3.3rem;
+        margin-left: -5.3rem;
+        text-align: left;
 }
     .sec-guidelines .container .animate p{
         margin-bottom: .6rem;
+        text-align: left;
     }
 }
