@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Digital-7';
+  src: url('./fonts/digital-7.ttf');
+}
+
 .container_for_timer {
   display: none;
 }
@@ -78,8 +83,9 @@
   }
   
   .container_for_timer li span {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     color: #f2a20e;
+    font-family: 'Digital-7';
   }
 }
