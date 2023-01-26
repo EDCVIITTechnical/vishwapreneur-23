@@ -5,6 +5,9 @@ body {
     rgb(26, 1, 46) 99.4%
   );
 }
+.no-scroll{
+  overflow:hidden;
+}
 html{
   scroll-behavior: smooth;
   transition-duration: 5s ;
