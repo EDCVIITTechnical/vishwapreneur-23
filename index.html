@@ -83,7 +83,7 @@
     </nav>
   </head>
 
-  <body>
+  <body class="no-scroll">
     <div id="loader">
       <div data-text="Vishwapreneur..." class="loader">Vishwapreneur...</div>
     </div>
@@ -1340,6 +1340,7 @@
         } else {
           document.querySelector("#loader").style.display = "none";
           document.querySelector("body").style.visibility = "visible";
+          document.body.classList.remove('no-scroll');
         }
       };
     </script>
