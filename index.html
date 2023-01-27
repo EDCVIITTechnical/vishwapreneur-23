@@ -1068,7 +1068,14 @@
           </div>
       </div>
   </div>
-  
+  <button id="myBtn" onclick="topFunction()">
+    <div class="to-top">
+      <div class="arrowed">
+        <div class="arrow-1"></div>
+      </div>
+      <p>To Top</p>
+    </div>
+  </button>
     <div id="footer" class="sec-footer" id="contact">
       <footer class="footer">
         <section class="subscribe-section">
@@ -1446,5 +1453,26 @@
 
       startSlide();
     </script>
+<!-- scroll to top      -->
+    <script>
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
   </body>
 </html>
