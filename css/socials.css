@@ -173,7 +173,7 @@
   }
 
   .card {
-    width: 80%;
+    width: 107%;
     height: 17rem;
     /* margin: 0 10%; */
     margin-bottom: 2rem;
@@ -183,7 +183,7 @@
     margin-right: 0;
   }
   .yt2 {
-    width: 80%;
+    /* width: 80%; */
     height: 17rem;
     margin: 0 10%;
     /* margin-left: 0; */

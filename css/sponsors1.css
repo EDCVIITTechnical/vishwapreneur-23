@@ -127,7 +127,7 @@ h1 {
 
   .sec-gallery .section h1 {
     font-size: 2rem;
-    padding-right: 3.6rem;
+    /* padding-right: 3.6rem; */
   }
 
   .guest .container .row h1 {

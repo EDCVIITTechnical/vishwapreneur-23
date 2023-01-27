@@ -156,7 +156,7 @@
                 </div>
                 <div class="about" style="display: flex;">
     
-                    <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1673532048/Vishwapreneur/vp-LOGO_1_it57yd.png" style="height: 370px;" alt="">
+                    <img class = "vplogo"src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1673532048/Vishwapreneur/vp-LOGO_1_it57yd.png"  alt="Vishwapreneur Logo">
                     <div class="about-cnt">
                         <h2>About Vishwapreneur</h2>
                         <p>Vishwapreneur is a National Level Entrepreneurial Summit showcasing entrepreneurs, creators and innovative minds of our century who had the courage to think out of the box. Vishwapreneur is a platform for budding entrepreneurs to seek motivation & guidance through the experiences of successful business tycoons.
@@ -386,7 +386,7 @@
                 />
               </div>
               <h4>Sidharth</h4>
-              <span>Head of Product,GrowthSchool.io</span>
+              <span>Head of Product, GrowthSchool.io</span>
               <p class="content">
                 Siddharth is an award winning innovator having been awarded at
                 many IIM's, IIT's, NIT's and universities across India.
@@ -419,7 +419,7 @@
                 />
               </div>
               <h4>Saurabh Jain</h4>
-              <span>Ex Vice President,Paytm</span>
+              <span>Ex Vice President, Paytm</span>
               <p class="content">
                 Saurabh is the founder of Fun2Do Labs (EdTech Startup). Fun2Do
                 Labs is pioneering a new space in EdTech called 'Transmedia
@@ -672,23 +672,23 @@
       </section>
       <div class="m-container">
         <div class="slides">
-          <div class="slide">
-            <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1674586492/VP-more%20compressed%20images/2_1_kxxpyx.jpg" alt="" />
+          <div class="slide g1">
+            <!-- <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1674586492/VP-more%20compressed%20images/2_1_kxxpyx.jpg" alt="" /> -->
           </div>
-          <div class="slide">
-            <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1647510185/Gallery/Saurabh-Jain_doququ.webp" alt="" />
+          <div class="slide g2">
+            <!-- <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1647510185/Gallery/Saurabh-Jain_doququ.webp" alt="" /> -->
           </div>
-          <div class="slide">
-            <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1674560787/VP-23/4_qvp96z.jpg" alt="" />
+          <div class="slide g3">
+            <!-- <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1674560787/VP-23/4_qvp96z.jpg" alt="" /> -->
           </div>
-          <div class="slide">
-            <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1674560786/VP-23/6_cceosj.jpg" alt="" />
+          <div class="slide g4">
+            <!-- <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1674560786/VP-23/6_cceosj.jpg" alt="" /> -->
           </div>
-          <div class="slide">
-            <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1674560787/VP-23/7_hqtsff.jpg" alt="" />
+          <div class="slide g5">
+            <!-- <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1674560787/VP-23/7_hqtsff.jpg" alt="" /> -->
           </div>
-          <div class="slide">
-            <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1674560787/VP-23/81_ao2ldw.jpg" alt="" />
+          <div class="slide g6">
+            <!-- <img src="https://res.cloudinary.com/da5mmxnn3/image/upload/v1674560787/VP-23/81_ao2ldw.jpg" alt="" /> -->
           </div>
         </div>
         <div class="slide-controls">
@@ -815,7 +815,7 @@
         <!-- <div class="youtube1"> -->
           <iframe
           class="iframetag card yt1"
-            src="https://www.youtube.com/embed/bpmOhuTNu9Y?autoplay=1&mute=1"
+            src="https://www.youtube.com/embed/bpmOhuTNu9Y?autoplay=1&mute=1&loop=1&playlist=bpmOhuTNu9Y"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1385,34 +1385,34 @@
       const nextBtn = document.getElementById("next-btn");
       const prevBtn = document.getElementById("prev-btn");
       const interval = 7000;
-
+  
       let slides = document.querySelectorAll(".slide");
       let index = 1;
       let slideId;
-
+  
       const firstClone = slides[0].cloneNode(true);
       const lastClone = slides[slides.length - 1].cloneNode(true);
-
+  
       firstClone.id = "first-clone";
       lastClone.id = "last-clone";
-
+  
       slide.append(firstClone);
       slide.prepend(lastClone);
-
+  
       const slideWidth = slides[index].clientWidth;
-
+  
       slide.style.transform = `translateX(${-slideWidth * index}px)`;
-
+  
       console.log(slides);
-
+  
       const startSlide = () => {
         slideId = setInterval(() => {
           moveToNextSlide();
         }, interval);
       };
-
+  
       const getSlides = () => document.querySelectorAll(".slide");
-
+  
       slide.addEventListener("transitionend", () => {
         slides = getSlides();
         if (slides[index].id === firstClone.id) {
@@ -1420,14 +1420,14 @@
           index = 1;
           slide.style.transform = `translateX(${-slideWidth * index}px)`;
         }
-
+  
         if (slides[index].id === lastClone.id) {
           slide.style.transition = "none";
           index = slides.length - 2;
           slide.style.transform = `translateX(${-slideWidth * index}px)`;
         }
       });
-
+  
       const moveToNextSlide = () => {
         slides = getSlides();
         if (index >= slides.length - 1) return;
@@ -1435,22 +1435,75 @@
         slide.style.transition = ".7s ease-out";
         slide.style.transform = `translateX(${-slideWidth * index}px)`;
       };
-
+  
       const moveToPreviousSlide = () => {
         if (index <= 0) return;
         index--;
         slide.style.transition = ".7s ease-out";
         slide.style.transform = `translateX(${-slideWidth * index}px)`;
       };
-
+  
       slideContainer.addEventListener("mouseenter", () => {
-        interval = 25000;
+        clearInterval(slideId);
       });
-
+  
       slideContainer.addEventListener("mouseleave", startSlide);
       nextBtn.addEventListener("click", moveToNextSlide);
       prevBtn.addEventListener("click", moveToPreviousSlide);
-
+  
+      slideContainer.addEventListener(
+        "touchstart",
+        function (event) {
+          touchstartX = event.changedTouches[0].screenX;
+          touchstartY = event.changedTouches[0].screenY;
+        },
+        false
+      );
+  
+      slideContainer.addEventListener(
+        "touchend",
+        function (event) {
+          touchendX = event.changedTouches[0].screenX;
+          touchendY = event.changedTouches[0].screenY;
+          handleGesture();
+        },
+        false
+      );
+  
+      function handleGesture() {
+        if (touchendX < touchstartX) {
+          //console.log("Swiped Left");
+          moveToNextSlide();
+          clearInterval(slideId);
+        }
+  
+        if (touchendX > touchstartX) {
+          //console.log("Swiped Right");
+          moveToPreviousSlide();
+          clearInterval(slideId);
+        }
+  
+        if (touchendY < touchstartY) {
+          //console.log("Swiped Up"+ (touchendY-touchstartY));
+          if((touchendY-touchstartY)<(-100)){
+            //console.log("continuing sliding");
+          startSlide();
+          }
+        }
+  
+        if (touchendY > touchstartY) {
+          //console.log("Swiped down"+ (touchendY-touchstartY));
+          if((touchendY-touchstartY)>(100)){
+            //console.log("continuing sliding");
+          startSlide();
+          }
+        }
+  
+        if (touchendY === touchstartY) {
+       //   console.log("Tap");
+        }
+      }
+  
       startSlide();
     </script>
 <!-- scroll to top      -->
