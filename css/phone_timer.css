@@ -40,13 +40,16 @@
 
   .countdown_1 ul {
       display: flex;
-      padding-left: 5rem;
+      justify-content: center;
+      padding-left: 2rem;
+      padding-right: 2rem;
       background-image:radial-gradient(circle at 24.1% 68.8%, #130F40 0%, #000000  80%);
       width: 75%;
       height: 18rem;
       padding-top: 1rem;
-      margin-right: 3vw;
-      margin-left: 3vw;
+      /* margin-right: 3vw;
+      margin-left: 3vw; */
+      margin:auto;
       border-radius: 3vw;
       margin-bottom: 3rem;
       font-family: 'Poppins';
