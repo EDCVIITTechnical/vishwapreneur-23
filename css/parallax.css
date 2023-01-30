@@ -77,6 +77,9 @@
     height:68rem;
   }
 
+  .mimg{
+    content : url("https://res.cloudinary.com/da5mmxnn3/image/upload/v1674585637/VP-more%20compressed%20images/mobile-view-new1_uxtcqp.jpg")
+  }
   .hero_phone {
     display: initial;
   }
