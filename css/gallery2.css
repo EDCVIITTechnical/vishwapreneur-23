@@ -170,20 +170,15 @@ h1 {
   /* background: #ddd; */
 }
 
-.item7 {
+.item5 {
   display: none;
 }
-.item8 {
-  display: none;
-}
+
 @media (min-width: 1417px) {
   .item--large1 {
     grid-row-end: span 2;
   }
-  .item7 {
-    display: block;
-  }
-  .item8 {
+  .item5 {
     display: block;
   }
 }
