@@ -45,6 +45,11 @@ body {
   transform: rotate(-45deg);
   border-radius: 2.5px;
 }
+
+.edc-details {
+  display: none;
+}
+
 @media screen and (max-width: 630px){
   .to-top{
     position: fixed;
@@ -71,6 +76,10 @@ body {
 :root {
   --primary-color: #9955c4;
   --secondary-color: #fff;
+}
+
+.presents {
+  display: none;
 }
 
 .footer {
@@ -212,6 +221,10 @@ body {
   font-family: 'BatmanForeverAlternate';
 }
 
+.phone-footer {
+  display: none;
+}
+
 @media only screen and (max-width: 630px) {
   .footer {
     display: block;
@@ -239,6 +252,7 @@ body {
   .sitemap-section {
     /* justify-content: center; */
     margin-left: 10vw;
+    display: none;
   }
   .sitemap-links-group{
     margin-right: 0;
@@ -256,13 +270,14 @@ body {
     } */
   .subscribe-section {
     padding-bottom: 0.3rem;
+    /* display: none; */
   }
   .sitemap-links-heading {
-    padding-bottom: 0.1rem;
+    padding-bottom: 0.3rem;
     font-size: 1rem;
     font-style: normal;
   }
-  a {
+  .phone-footer a {
     font-size: 0.7rem;
   }
   .ltext {
@@ -274,17 +289,19 @@ body {
   }
 
   .head2 {
-    text-align: left;
+    text-align: center;
     font-size: 1.5rem;
-    margin-top: -3vh;
+    margin-top: 4vh;
   }
 
   .subscribe-subtext {
-    font-size: 0;
+    font-size: 1rem;
+    text-align: center;
+    padding-right: 1rem;
   }
 
   .sitemap-links-heading {
-    padding-bottom: 0.1rem;
+    padding-bottom: 0.4rem;
     font-size: 0.8rem;
     font-style: normal;
   }
@@ -293,10 +310,58 @@ body {
     color: #ddd;
     font-size: 12px;
     padding: 0.4vh 0 0 0;
-    line-height: 20px;
+    line-height: 28px;
   }
 
   .footer {
     width: 100%;
+    height: 50%;
   }
+
+  .footer-contact {
+    margin-right: -2rem;
+  }
+
+  .phone-footer{
+    display: flex;
+    padding-top: 3vh;
+  }
+
+  .phone-footer .footer-socials {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .edc-details {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: -1rem;
+  }
+
+  .edc-logo {
+    height: 3rem;
+    width: 4rem;
+  }
+  .edc-details img {
+    height:3.3rem;
+    width: 3.5rem;
+    padding-left: 3rem;
+    padding-right: 1rem;
+    border-right: 1px solid white;
+  }
+  
+  .edc-details .edc-text {
+    padding-left: 5rem;
+    font-size: 0.7rem;
+  }
+
+  .presents {
+    display: initial;
+    padding-top: 1.5rem;
+    margin-left:9rem;
+    font-size: 10px;
+    text-align: center;
+  }
+
 }
