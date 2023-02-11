@@ -1,14 +1,15 @@
-body{
-    height: 10/0vh;
-    background-image: radial-gradient(circle at 50.1% 58.8%, #130F40 0%, #000000 80%);
-    /* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
-}
 @font-face {
   font-family: 'BatmanForeverAlternate';
   src: url('./batmfa__.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+body{
+    height: 10/0vh;
+    background-image: radial-gradient(circle at 50.1% 58.8%, #130F40 0%, #000000 80%);
+    /* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
+}
+
 .cards-list {
     z-index: 0;
     width: 100%;
