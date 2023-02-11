@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 @font-face {
-  font-family: 'BatmanForeverAlternate';
-  src: url('./batmfa__.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'BatmanForeverAlternate';
+    src: url('../fonts/batman_forever (1)/batmfa__.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 ::-webkit-scrollbar {
