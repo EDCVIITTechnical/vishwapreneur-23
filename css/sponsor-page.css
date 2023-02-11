@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'BatmanForeverAlternate';
-  src: url('./batmfa__.ttf') format('truetype');
+  src: url('../batmfa__.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
