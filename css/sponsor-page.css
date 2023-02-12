@@ -10,6 +10,13 @@ body{
     /* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
 }
 
+.headtitle{
+  font-family: 'BatmanForeverAlternate';
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+}
+
 .cards-list {
     z-index: 0;
     width: 100%;
