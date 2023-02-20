@@ -39,7 +39,7 @@ body{
     /* border:2px solid #ffab0f; */
     /* border-radius: 40px; */
   
-    box-shadow: #ffab0f 0px 0px 0px 3px, #ffab0f 0px 4px 6px -1px, #ffab0f 0px 1px 0px inset;
+/*     box-shadow: #ffab0f 0px 0px 0px 3px, #ffab0f 0px 4px 6px -1px, #ffab0f 0px 1px 0px inset; */
     cursor: pointer;
     transition: 0.4s;
   }
