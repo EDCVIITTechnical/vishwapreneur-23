@@ -12,8 +12,8 @@
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-250px * 15));
-    transform: translateX(calc(-250px * 15));
+    -webkit-transform: translateX(calc(-250px * 17));
+    transform: translateX(calc(-250px * 17));
   }
 }
 @keyframes scroll {
@@ -22,8 +22,8 @@
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-250px * 15));
-    transform: translateX(calc(-250px * 15));
+    -webkit-transform: translateX(calc(-250px * 17));
+    transform: translateX(calc(-250px * 17));
   }
 }
 .sponsor-slider {
