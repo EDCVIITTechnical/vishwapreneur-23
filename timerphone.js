@@ -33,7 +33,7 @@
   
           //do something later when date is reached
           if (distance < 0) {
-            document.getElementById("headline").innerText = "Event Started!";
+            document.getElementById("headline").innerText = "Event will start at 8AM!";
             document.getElementById("countdown").style.display = "none";
             document.getElementById("content").style.display = "block";
             clearInterval(x);
